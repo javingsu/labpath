@@ -56,7 +56,7 @@ export function classify(parts) {
 /** 관련도: 제목에 임상병리 관련 단어가 있거나, 직종(sector)에만 있고 제목이 다른 직종 모집이 아닐 때 */
 export function relevance(title, sector = '') {
   if (RELEVANT.test(title)) return 'strong';
-  if (RELEVANT.test(sector) && /채용|모집|직원|공고|검사|검진|진단|수면/.test(title) && !/간호|조무|BD|CRA|영업|마케팅|코디|원무|사무|어시스트|상담|약사|치위생|물리치료|방사선/i.test(title)) return 'sector';
+  if (RELEVANT.test(sector) && /채용|모집|직원|공고|검사|검진|진단|수면/.test(title) && !/간호|조무|BD|CRA|영업|마케팅|코디|원무|사무|어시스트|상담|약사|치위생|치과|물리치료|방사선/i.test(title)) return 'sector';
   return '';
 }
 
@@ -88,7 +88,8 @@ export function parseSaramin(html) {
     const cond = (p.match(/<div class="job_condition">([\s\S]*?)<\/div>/) || [])[1] || '';
     const spans = [...cond.matchAll(/<span>([\s\S]*?)<\/span>/g)].map(m => clean(m[1]));
     const sector = clean((p.match(/<div class="job_sector">([\s\S]*?)<\/div>/) || [])[1]);
-    return { key, title: decode(tit ? tit[1] : ''), org: clean((p.match(/<strong class="corp_name">([\s\S]*?)<\/strong>/) || [])[1]), region: spans[0] || '', ...classify(spans.slice(1)), sector, postedText: (sector.match(/(등록|수정)일\s*([\d/]+)/) || [])[2] || '', deadlineText: clean((p.match(/<span class="date">([\s\S]*?)<\/span>/) || [])[1]), url: 'https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=' + key };
+    const hasRegion = spans[0] && !/경력|신입|학력|대졸|고졸|정규직|계약직|만원|원$/.test(spans[0]);
+    return { key, title: decode(tit ? tit[1] : ''), org: clean((p.match(/<strong class="corp_name">([\s\S]*?)<\/strong>/) || [])[1]), region: hasRegion ? spans[0] : '', ...classify(hasRegion ? spans.slice(1) : spans), sector, postedText: (sector.match(/(등록|수정)일\s*([\d/]+)/) || [])[2] || '', deadlineText: clean((p.match(/<span class="date">([\s\S]*?)<\/span>/) || [])[1]), url: 'https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=' + key };
   }).filter(Boolean);
 }
 

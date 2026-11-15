@@ -112,7 +112,7 @@ const COLLECTORS = {
       source: '동의대학교 대학원 · 모집요강', url: URLS.deu, guideUrl: g.guideUrl, guideLabel: g.guideUrl ? g.title + ' (원본 파일)' : '' })];
   },
   async kyungwoon() {
-    const res = await fetch(URLS.kyungwoon, { method: 'HEAD', headers: { 'User-Agent': UA }, signal: AbortSignal.timeout(20000) });
+    let res; for (let i = 1; ; i++) { try { res = await fetch(URLS.kyungwoon, { method: 'HEAD', headers: { 'User-Agent': UA }, signal: AbortSignal.timeout(20000) }); break; } catch (e) { if (i >= 3) throw e; await sleep(4000); } }
     if (!res.ok) throw new Error(`원문 응답 오류 (${res.status})`);
     const lm = res.headers.get('last-modified'); const updated = lm ? new Date(lm).toISOString().slice(0, 10) : '';
     return [makeGradItem({ id: 'kyungwoon-guide', sourceId: 'kyungwoon', org: '경운대학교 일반대학원', title: '경운대학교 일반대학원 신입생 모집요강', region: '경북', posted: updated,

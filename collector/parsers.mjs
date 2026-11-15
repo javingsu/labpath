@@ -286,8 +286,8 @@ export function parseWork24(html) {
     const [key, type, org, ...t] = decode(v[1]).split('|');
     const href = (p.match(/href="(\/wk\/a\/b\/1500\/empDetailAuthView\.do\?[^"]+)"/) || [])[1];
     const spans = sel => [...(p.match(new RegExp('<li class="' + sel + '">([\\s\\S]*?)</li>')) || ['', ''])[1].matchAll(/<span class="item[^"]*">([\s\S]*?)<\/span>/g)].map(m => clean(m[1]));
-    const date = (p.match(/var date = '([\d-]+)'/) || [])[1] || '';
-    const wanted = /var wantedYn = 'Y'/.test(p) || /^2099/.test(date);
+    const date = (p.match(/var\s+date\s*=\s*'([\d-]*)'/) || [])[1] || (p.match(/마감일\s*:\s*(\d{4}-\d{2}-\d{2})/) || [])[1] || '';
+    const wanted = /var\s+wantedYn\s*=\s*'Y'/.test(p) || /^2099/.test(date);
     return { key, type, org: clean(org), title: clean(t.join('|')), salary: spans('dollar')[0] || '', career: spans('member')[0] || '', degree: spans('member')[1] || '', hours: spans('time').join(' · '),
       address: clean((p.match(/<li class="site">([\s\S]*?)<\/li>/) || [])[1]), deadline: wanted ? '' : date, deadlineLabel: wanted ? '채용시' : '',
       posted: (p.match(/등록일\s*:\s*(\d{4}-\d{2}-\d{2})/) || [])[1] || '', url: href ? 'https://www.work24.go.kr' + decode(href) : '' };

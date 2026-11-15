@@ -265,7 +265,9 @@ export function parseGojobsList(html) {
 export function parseGojobsDetail(html) {
   const t = clean(html.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/g, ''));
   const g = re => (t.match(re) || [])[1] || '';
-  return { startDate: g(/접수시작일\s*(\d{4}-\d{2}-\d{2})/), deadline: g(/접수마감일\s*(\d{4}-\d{2}-\d{2})/), grade: g(/채용직급\s*(.+?)\s*근무지역/), workplace: g(/근무지역\s*(.+?)\s*장애인/), fullText: t };
+  const body = t.slice(Math.max(0, t.search(/접수시작일\s*\d{4}/))); // 표 설명(caption)에 같은 낱말이 있어 본문부터 찾음
+  const b = re => (body.match(re) || [])[1] || '';
+  return { startDate: g(/접수시작일\s*(\d{4}-\d{2}-\d{2})/), deadline: g(/접수마감일\s*(\d{4}-\d{2}-\d{2})/), grade: b(/채용직급\s*([^,][^]*?)\s*근무지역/), workplace: b(/근무지역\s*([^,][^]*?)\s*장애인/), fullText: t };
 }
 /** 주소·기관명에서 광역 지역 추출 */
 export function regionOf(s) {
@@ -280,7 +282,6 @@ export function parseWork24(html) {
   const parts = html.split(/<tr id="list\d+">/).slice(1);
   if (!parts.length) { if (/검색결과가 없|조회된 데이터가 없/.test(html)) return []; throw new Error('고용24 검색 결과를 찾지 못했습니다'); }
   return parts.map(p => {
-    p = p.slice(0, p.indexOf('</tr>'));
     const v = p.match(/id="chkboxWantedAuthNo\d+"\s+value="([^"]+)"/); if (!v) return null;
     const [key, type, org, ...t] = decode(v[1]).split('|');
     const href = (p.match(/href="(\/wk\/a\/b\/1500\/empDetailAuthView\.do\?[^"]+)"/) || [])[1];

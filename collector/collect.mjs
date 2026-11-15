@@ -79,7 +79,7 @@ const COLLECTORS = {
     for (const r of rows.slice(0, 15)) {
       let d = {}; try { await sleep(600); d = parseGojobsDetail(await get(r.url)); } catch { /* 목록 정보만 사용 */ }
       const kindTag = r.kind === '국가' ? '국가직 공무원' : r.kind === '지자체' ? '지방직·지자체' : r.kind === '공공' ? '공공기관' : '';
-      out.push(makeItem(src, { ...r, region: regionOf(d.workplace || r.org + ' ' + r.title), deadline: d.deadline || r.deadline, startDate: d.startDate,
+      out.push(makeItem(src, { ...r, region: regionOf(d.workplace) || regionOf(r.org + ' ' + r.title), deadline: d.deadline || r.deadline, startDate: d.startDate,
         condition: /임기제|기간제|대체|한시/.test(r.title) ? '임기제·기간제' : /청년인턴/.test(r.title) ? '인턴' : '공무원·공공 채용', career: /경력/.test(r.title) ? '경력' : '', degree: '공고문 확인',
         relevance: 'strong', official: true, integrated: /,|，/.test(r.title.replace(/\([^)]*임상병리[^)]*\)/, '')),
         qualification: [d.grade && '채용 직급: ' + d.grade, d.workplace && '근무지: ' + d.workplace, '응시 자격(면허·경력 연수)은 공고문 첨부파일에서 확인하세요.'].filter(Boolean).join('\n'),

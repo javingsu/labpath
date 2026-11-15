@@ -4,6 +4,11 @@
     "saramin": true,
     "jobkorea": true,
     "eumc": true,
-    "seegene": true
+    "seegene": true,
+    "yonsei-spring": true,
+    "yonsei-fall": true,
+    "nsu": true,
+    "nsu-admissions": true,
+    "seoyeong": true
   }
 }

@@ -168,3 +168,80 @@ export function makeItem(src, o, now = new Date()) {
   if (!dl.deadline && dl.label) item.deadlineLabel = dl.label;
   return item;
 }
+
+/* ── 대학원: 연세대학교 대학원 일반전형 일정 페이지 ── */
+const ymdStr = (y, m, d) => `${y}-${String(m).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
+/** "2026. 10. 7.(수) 10:00 ~ 10. 14.(수) 17:00 마감" → 시작·마감 날짜와 시각 */
+export function parseKoreanPeriod(t) {
+  t = clean(t);
+  const m = t.match(/(20\d{2})\.\s*(\d{1,2})\.\s*(\d{1,2})\.?(?:\s*\([^)]*\))?\s*(\d{1,2}:\d{2})?\s*[~∼～-]\s*(?:(20\d{2})\.\s*)?(\d{1,2})\.\s*(\d{1,2})\.?(?:\s*\([^)]*\))?\s*(\d{1,2}:\d{2})?/);
+  if (!m) { const one = t.match(/(20\d{2})\.\s*(\d{1,2})\.\s*(\d{1,2})/); return one ? { date: ymdStr(+one[1], +one[2], +one[3]) } : {}; }
+  const sy = +m[1], sm = +m[2], em = +m[6];
+  const ey = m[5] ? +m[5] : (em < sm ? sy + 1 : sy);
+  return { start: ymdStr(sy, sm, +m[3]), startTime: m[4] || '', end: ymdStr(ey, em, +m[7]), endTime: (m[8] || '').padStart(5, '0') === '00:00' ? '' : (m[8] ? m[8].padStart(5, '0') : '') };
+}
+export function parseYonseiSchedule(html, campus = '미래캠퍼스') {
+  const head = text((html.match(/<th[^>]*>\s*(20\d{2}\s*(?:전기|후기)\s*입학전형[\s\S]*?)<\/th>/) || [])[1]);
+  const hm = head.match(/(20\d{2})\s*(전기|후기)/);
+  if (!hm) throw new Error('연세대 입시일정 표를 찾지 못했습니다');
+  const rows = {};
+  const tb = html.slice(html.indexOf(hm[0]));
+  for (const tr of tb.slice(0, tb.indexOf('</table>')).split(/<tr[\s>]/).slice(1)) {
+    const tds = [...tr.matchAll(/<td[^>]*>([\s\S]*?)<\/td>/g)].map(m => clean(m[1]));
+    if (tds.length >= 3 && tds[1]) rows[tds[1]] = tds[2];
+  }
+  let guideUrl = '', guideLabel = '';
+  for (const tr of html.split(/<tr[\s>]/)) {
+    if (!tr.includes('(' + campus + ')')) continue;
+    const href = (tr.match(/href="([^"]+\.pdf)"/i) || [])[1];
+    if (!href) continue;
+    guideUrl = new URL(href, 'https://graduate.yonsei.ac.kr').href;
+    guideLabel = clean((tr.match(/<td[^>]*>([\s\S]*?)<\/td>/) || [])[1]);
+    break;
+  }
+  const appKey = Object.keys(rows).find(k => /원서\s*접수|입학원서/.test(k) && !/바로가기/.test(k)) || '';
+  return { year: +hm[1], term: hm[2], heading: head, rows, application: rows[appKey] || '', period: parseKoreanPeriod(rows[appKey] || ''), guideUrl, guideLabel };
+}
+
+/* ── 대학원: 남서울대학교 모집요강 화면(pdfViewer) ── */
+export function parseNsuAdmissions(html) {
+  const blocks = html.split('class="pdf_down').slice(1);
+  if (!blocks.length) throw new Error('남서울대 모집요강 화면을 찾지 못했습니다');
+  return blocks.map(b => {
+    const title = clean((b.match(/<strong class="titles">([\s\S]*?)<\/strong>/) || [])[1]);
+    const guide = b.match(/<a href="([^"]+)"[^>]*>\s*모집요강/);
+    return title ? { title, guideUrl: guide ? new URL(decode(guide[1]), 'https://gr.nsu.ac.kr').href : '', applyOpen: /apply_btn/.test(b.slice(0, 1500)) } : null;
+  }).filter(Boolean);
+}
+/* ── 대학원: 남서울대학교 공지사항 검색 결과 ── */
+export function parseNsuNotice(html) {
+  if (!/notice_list/.test(html)) throw new Error('남서울대 공지사항 목록을 찾지 못했습니다');
+  return html.split(/<li[\s>]/).filter(s => s.includes('article.view')).map(s => ({
+    key: (s.match(/article\.view\('(\d+)'/) || [])[1], title: clean((s.match(/<strong>\s*([\s\S]*?)\s*<\/strong>/) || [])[1]),
+    posted: ((s.match(/class="date"[^>]*>\s*([^<]*)/) || [])[1] || '').trim(), pinned: /^\s*class="notice"/.test(s)
+  })).filter(r => r.key && r.title);
+}
+/* ── 대학원: 서영대학교 입학관련 게시판 ── */
+export function parseSeoyeongList(html) {
+  const i = html.indexOf('<tbody'); if (i < 0) throw new Error('서영대 게시판 목록을 찾지 못했습니다');
+  return html.slice(i, html.indexOf('</tbody>', i)).split(/<tr[\s>]/).slice(1).map(tr => {
+    const a = tr.match(/selectNttInfo\.do\?nttSn=(\d+)[^"]*"[^>]*>([\s\S]*?)<\/a>/); if (!a) return null;
+    const date = (tr.match(/<td>\s*(20\d{2})\.(\d{2})\.(\d{2})\s*<\/td>/) || []);
+    return { key: a[1], title: clean(a[2]), posted: date[1] ? `${date[1]}-${date[2]}-${date[3]}` : '', url: `https://jspjchild.seoyeong.ac.kr/grad/na/ntt/selectNttInfo.do?nttSn=${a[1]}&mi=4146` };
+  }).filter(Boolean);
+}
+
+/** 대학원 항목 공통 형식 */
+export function makeGradItem(o, now = new Date()) {
+  const { today } = dates(now);
+  const item = {
+    id: o.id, type: 'grad', org: o.org, title: o.title, region: o.region, field: o.field || '대학원 진학',
+    condition: o.condition || '학위과정 확인', career: o.career || '입학 자격 확인', degree: o.degree || '학위과정 확인',
+    deadline: o.deadline || '', posted: o.posted || '', kind: o.kind || '대학원 모집요강', tags: o.tags || [],
+    summary: o.summary, qualification: o.qualification || '전공별 지원 자격은 해당 모집요강에서 확인',
+    benefit: o.benefit || '등록금·장학금·수업 시간 원문 확인 필요', documents: o.documents || '해당 연도 전형 서류는 공식 요강에서 확인',
+    source: o.source, url: o.url, checked: today, sourceId: o.sourceId, status: 'listed', lastVerifiedAt: now.toISOString()
+  };
+  for (const k of ['startDate', 'deadlineTime', 'guideUrl', 'guideLabel', 'admissionSchedule']) if (o[k]) item[k] = o[k];
+  return item;
+}

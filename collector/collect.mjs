@@ -3,7 +3,7 @@
 // 사용: node collector/collect.mjs            (feed.json 갱신)
 //       node collector/collect.mjs --dry-run  (저장하지 않고 결과만 출력)
 import { readFile, writeFile } from 'node:fs/promises';
-import { parseAlioList, parseAlioDetail, parseSaramin, parseJobkorea, parseEumc, parseSeegeneList, parseSeegeneDetail, makeItem, relevance, dates } from './parsers.mjs';
+import { parseAlioList, parseAlioDetail, parseSaramin, parseJobkorea, parseEumc, parseSeegeneList, parseSeegeneDetail, makeItem, relevance, dates, parseYonseiSchedule, parseNsuAdmissions, parseNsuNotice, parseSeoyeongList, makeGradItem } from './parsers.mjs';
 
 const FEED = new URL('../feed.json', import.meta.url);
 const CONFIG = new URL('./config.json', import.meta.url);
@@ -24,12 +24,73 @@ const URLS = {
   saramin: 'https://www.saramin.co.kr/zf_user/search/recruit?searchword=%EC%9E%84%EC%83%81%EB%B3%91%EB%A6%AC&recruitPageCount=100&recruitSort=reg_dt',
   jobkorea: 'https://www.jobkorea.co.kr/Search/?stext=%EC%9E%84%EC%83%81%EB%B3%91%EB%A6%AC&tabType=recruit',
   eumc: 'https://www.eumc.ac.kr/intro/recrut/list.do?bid_status=I',
-  seegene: 'https://pr.seegenemedical.com/board/recruit/index.do'
+  seegene: 'https://pr.seegenemedical.com/board/recruit/index.do',
+  'yonsei-spring': 'https://graduate.yonsei.ac.kr/graduate/admission/general_schedule.do',
+  'yonsei-fall': 'https://graduate.yonsei.ac.kr/graduate/admission/general_fall_schedule.do',
+  nsu: 'https://gr.nsu.ac.kr/kor/article/notice?searchCondition=1&searchKeyword=%EB%AA%A8%EC%A7%91',
+  'nsu-admissions': 'https://gr.nsu.ac.kr/kor/21/pdfViewer/CAT006',
+  seoyeong: 'https://jspjchild.seoyeong.ac.kr/grad/na/ntt/selectNttList.do?bbsId=781&mi=4146'
 };
+// 대학원 출처: 이번에 보이지 않은 기존 항목은 '다음 전형으로 교체됨'으로 닫음, 서영대는 게시글 주소로 기존 id 재사용
+const GRAD_CLOSE_MISSING = new Set(['yonsei-spring', 'yonsei-fall', 'nsu', 'nsu-admissions', 'seoyeong']);
+const REUSE_ID_BY_URL = new Set(['seoyeong']);
+
+async function yonsei(id, termName) {
+  const s = parseYonseiSchedule(await get(URLS[id]));
+  const p = s.period;
+  const guideYear = (s.guideLabel.match(/(20\d{2})학년도/) || [])[1];
+  const oldGuide = guideYear && +guideYear !== s.year;
+  const pick = re => { const k = Object.keys(s.rows).find(x => re.test(x)); return k ? s.rows[k] : ''; };
+  return [makeGradItem({
+    id: `yonsei-mirae-${s.year}-${s.term === '전기' ? 'spring' : 'fall'}`, sourceId: id,
+    org: '연세대학교 일반대학원 · 미래캠퍼스', title: `${s.year}학년도 ${s.term} 일반전형 모집 · 미래캠퍼스`, region: '강원',
+    field: '대학원 진학', condition: '일반대학원', career: '과정별 지원 자격 확인', degree: '석사·박사·통합 과정별 확인', kind: '대학원 모집요강',
+    tags: ['미래캠퍼스', '일반전형', s.term, p.end ? '공식 접수 일정' : '접수 일정 원문 확인'].concat(oldGuide ? ['요강은 이전 학년도(참고용)'] : []),
+    startDate: p.start, deadline: p.end, deadlineTime: p.endTime,
+    summary: `미래캠퍼스용 일반대학원 ${s.term} 모집입니다. ${p.end ? `원서접수 ${p.start} ~ ${p.end}${p.endTime ? ' ' + p.endTime : ''}.` : '접수 일정은 원문에서 확인하세요.'} ${oldGuide ? '올해 요강이 아직 올라오지 않아 이전 학년도 요강(참고용)을 연결했어요. ' : ''}지원 학과·학위과정의 모집 여부는 미래캠퍼스 PDF에서 확인하세요.`,
+    qualification: '석사·통합 및 박사 지원 자격과 전공별 제한은 미래캠퍼스 모집요강 확인 필요. 임상병리 관련 전공의 이번 전형 모집 여부는 별도 확인하세요.',
+    benefit: '일반대학원 주간 과정. 등록금·장학금·수업 세부 조건은 해당 모집요강 확인 필요.',
+    documents: '학업·연구계획서와 과정별 제출 서류는 공식 요강 및 원서접수 안내에서 확인.',
+    source: `연세대 미래캠퍼스 · ${termName} 일반전형`, url: URLS[id], guideUrl: s.guideUrl, guideLabel: s.guideLabel,
+    admissionSchedule: { application: s.application, '구술시험 대상자 발표': pick(/대상자\s*발표/), interview: pick(/구술시험\s*및|면접/), result: pick(/최종\s*합격/) }
+  })];
+}
 const keep = (rows, src) => rows.map(o => ({ ...o, relevance: relevance(o.title, o.sector) })).filter(o => o.relevance).map(o => makeItem(src, o));
 const periodDates = p => { const m = [...String(p).matchAll(/(20\d{2})-(\d{2})-(\d{2})(?:\s+(\d{2}):(\d{2}))?/g)]; return m.length ? { startDate: `${m[0][1]}-${m[0][2]}-${m[0][3]}`, deadline: m[1] ? `${m[1][1]}-${m[1][2]}-${m[1][3]}` : '', deadlineTime: m[1] && m[1][4] && !(m[1][4] === '00' && m[1][5] === '00') ? `${m[1][4]}:${m[1][5]}` : '' } : {}; };
 
 const COLLECTORS = {
+  'yonsei-spring': () => yonsei('yonsei-spring', '전기'),
+  'yonsei-fall': () => yonsei('yonsei-fall', '후기'),
+  async 'nsu-admissions'() {
+    return parseNsuAdmissions(await get(URLS['nsu-admissions'])).map(b => makeGradItem({
+      id: 'nsu-guide-' + b.title.replace(/\s/g, ''), sourceId: 'nsu-admissions', org: '남서울대학교 대학원', title: b.title, region: '충남',
+      field: '임상병리 관련 진학', condition: '학위과정 확인', degree: '모집요강 확인', kind: '대학원 모집요강',
+      tags: ['공식 사이트 자동 수집', b.applyOpen ? '원서접수 링크 열림' : '모집학과·접수 일정 확인 필요'],
+      summary: '대학원 홈페이지에 게시된 모집요강입니다. ' + (b.applyOpen ? '원서접수 버튼이 열려 있어요. ' : '현재 접수 중임을 뜻하지 않으며 ') + '임상병리학과 모집 여부와 접수 일정은 요강 PDF의 ‘모집일정 및 모집학과’에서 확인하세요.',
+      qualification: '전공별 지원 자격은 해당 모집요강 PDF에서 확인', documents: '해당 연도 전형 서류 및 PDF 요강 확인',
+      source: '남서울대학교 대학원 · 모집요강', url: URLS['nsu-admissions'], guideUrl: b.guideUrl, guideLabel: b.guideUrl ? b.title + ' (PDF)' : ''
+    }));
+  },
+  async nsu() {
+    const { today } = dates();
+    const cutoff = new Date(Date.parse(today) - 150 * 86400000).toISOString().slice(0, 10);
+    return parseNsuNotice(await get(URLS.nsu))
+      .filter(r => /모집요강|(신입생|신·편입생|신편입생|입학).*(모집|전형)/.test(r.title) && !/논문|장학|교육생|공모|참가|기숙사|IBEC|학생증|연구원|베트남어|외국인/.test(r.title) && r.posted >= cutoff)
+      .map(r => makeGradItem({ id: 'nsu-notice-' + r.key, sourceId: 'nsu', org: '남서울대학교 대학원', title: r.title, region: '충남', posted: r.posted,
+        field: '임상병리 관련 진학', kind: '대학원 모집 공지', tags: ['공식 사이트 자동 수집', '모집 일정 별도 확인'],
+        summary: '남서울대학교 대학원 공지사항에 올라온 모집 관련 글입니다. 공지 목록에서 제목으로 찾아 확인하세요.', source: '남서울대학교 대학원 · 공지사항', url: URLS.nsu }));
+  },
+  async seoyeong() {
+    const { today } = dates();
+    const year = +today.slice(0, 4);
+    return parseSeoyeongList(await get(URLS.seoyeong)).filter(r => +((r.title.match(/(20\d{2})학년도/) || [])[1] || 0) >= year).map(r => makeGradItem({
+      id: 'seoyeong-' + r.key, sourceId: 'seoyeong', org: '서영대학교 대학원', title: r.title, region: '광주', posted: r.posted,
+      field: '스마트진단검사', condition: '전문기술석사', degree: '전문기술석사', kind: /양식|서식/.test(r.title) ? '입학 서류 안내' : '대학원 모집 안내',
+      tags: ['공식 사이트 자동 수집', '모집 일정 별도 확인'], summary: '해당 연도 입학 서류 안내입니다. 접수 기간과 전공별 지원 자격은 모집요강에서 별도로 확인하세요.',
+      qualification: '학력·경력·전공별 자격은 해당 연도 공식 모집요강 확인 필요', documents: '입학 서류 양식은 공식 게시글 첨부파일에서 확인',
+      source: '서영대학교 대학원 · 입학 안내', url: r.url
+    }));
+  },
   async alio() {
     const src = { id: 'alio', label: '잡알리오', prefix: 'alio' };
     const rows = parseAlioList(await get(URLS.alio)).filter(r => !/마감|취소/.test(r.state));
@@ -69,6 +130,12 @@ const COLLECTORS = {
 const GENERIC = /원문\s*확인|확인\s*필요|확인하세요|^지역 확인$|^학력 확인$|^기관명 확인$/;
 function merge(old, n, nowIso) {
   if (!old) return { ...n, firstSeenAt: nowIso };
+  if (n.type === 'grad') { // 대학원은 수집기가 만든 설명이 기준: 새 값으로 덮어쓰고 변경만 기록
+    const out = { ...old, ...n, firstSeenAt: old.firstSeenAt || nowIso };
+    delete out.closedReason;
+    if ((old.deadline || '') !== (n.deadline || '') && old.deadline) out.changedAt = nowIso;
+    return out;
+  }
   const out = { ...old }; let changed = false;
   for (const [k, v] of Object.entries(n)) {
     const ov = old[k];
@@ -86,7 +153,7 @@ function merge(old, n, nowIso) {
 
 async function main() {
   const config = JSON.parse(await readFile(CONFIG, 'utf8').catch(() => '{}'));
-  const enabled = config.sources || { alio: true, saramin: true, jobkorea: true, eumc: true, seegene: true };
+  const enabled = { ...Object.fromEntries(Object.keys(COLLECTORS).map(k => [k, true])), ...(config.sources || {}) };
   const feed = JSON.parse(await readFile(FEED, 'utf8'));
   const now = new Date(), nowIso = now.toISOString();
   const byId = new Map(feed.items.map(x => [x.id, x]));
@@ -98,7 +165,9 @@ async function main() {
     if (!enabled[id]) { statuses.push({ ...prev, id, status: 'skipped', checkedAt: nowIso, count: 0, message: '설정에서 자동 수집을 끈 출처입니다' }); continue; }
     try {
       const items = await run();
+      if (REUSE_ID_BY_URL.has(id)) for (const n of items) if (!byId.has(n.id)) { const same = [...byId.values()].filter(x => x.sourceId === id && x.url === n.url); if (same.length === 1) n.id = same[0].id; }
       for (const n of items) { const old = byId.get(n.id); const m = merge(old, n, nowIso); if (!old) added++; else if (m.changedAt === nowIso) changed++; byId.set(n.id, m); }
+      if (GRAD_CLOSE_MISSING.has(id)) { const seen = new Set(items.map(n => n.id)); for (const x of byId.values()) if (x.sourceId === id && !seen.has(x.id) && x.status !== 'closed') byId.set(x.id, { ...x, status: 'closed', closedReason: 'replaced', changedAt: nowIso }); }
       statuses.push({ ...prev, id, status: 'success', checkedAt: nowIso, count: items.length, message: '공개 페이지 확인 완료', lastSuccessAt: nowIso });
       ok++; console.log(`✓ ${id}: ${items.length}건`);
     } catch (e) {
@@ -113,7 +182,7 @@ async function main() {
   // 오래된 자료 정리: 마감 60일 경과, 또는 마감일 없이 60일 넘게 다시 확인되지 않은 채용 공고
   const { today } = dates(now);
   const cutoff = new Date(Date.parse(today + 'T00:00:00+09:00') - 60 * 86400000).toISOString().slice(0, 10);
-  const items = [...byId.values()].filter(x => x.type !== 'job' || (x.deadline ? x.deadline >= cutoff : (x.lastVerifiedAt || x.firstSeenAt || nowIso).slice(0, 10) >= cutoff));
+  const items = [...byId.values()].filter(x => x.type === 'grad' ? !(x.status === 'closed' && x.closedReason === 'replaced' && (x.changedAt || nowIso).slice(0, 10) < cutoff) : x.type !== 'job' || (x.deadline ? x.deadline >= cutoff : (x.lastVerifiedAt || x.firstSeenAt || nowIso).slice(0, 10) >= cutoff));
 
   const next = {
     ...feed, schemaVersion: feed.schemaVersion || 1, collectorVersion: 'labpath-gh-1', revision: globalThis.crypto.randomUUID(),

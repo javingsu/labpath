@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
  "collectorVersion": "labpath-gh-1",
- "revision": "f8911644-9068-4698-8a9b-a95839b62a2f",
+ "revision": "13568b2c-672a-4b63-9c5e-1e5aea900d00",
  "items": [
   {
    "id": "alio306401",
@@ -127,7 +127,7 @@
    "status": "listed",
    "firstSeenAt": "2026-10-28T06:47:37.818Z",
    "changedAt": "2026-10-28T06:47:37.818Z",
-   "lastVerifiedAt": "2026-11-15T04:27:16.434Z"
+   "lastVerifiedAt": "2026-11-15T04:31:21.238Z"
   },
   {
    "id": "nsu-clinical",
@@ -785,7 +785,7 @@
    "status": "listed",
    "firstSeenAt": "2026-10-28T06:47:37.818Z",
    "changedAt": null,
-   "lastVerifiedAt": "2026-11-15T04:27:16.434Z"
+   "lastVerifiedAt": "2026-11-15T04:31:21.238Z"
   },
   {
    "id": "jobkorea-50200968",
@@ -1532,7 +1532,7 @@
    },
    "firstSeenAt": "2026-10-28T09:31:29.971Z",
    "changedAt": null,
-   "lastVerifiedAt": "2026-11-15T04:27:09.541Z"
+   "lastVerifiedAt": "2026-11-15T04:31:13.141Z"
   },
   {
    "id": "yonsei-mirae-2026-fall",
@@ -1858,7 +1858,7 @@
    "startDate": "2026-10-30",
    "firstSeenAt": "2026-10-31T00:00:37.203Z",
    "changedAt": null,
-   "lastVerifiedAt": "2026-11-15T04:27:48.137Z",
+   "lastVerifiedAt": "2026-11-15T04:31:52.763Z",
    "closedReason": null
   },
   {
@@ -2498,7 +2498,7 @@
    "closedReason": null,
    "firstSeenAt": "2026-11-04T00:05:27.834Z",
    "changedAt": null,
-   "lastVerifiedAt": "2026-11-15T04:27:45.983Z"
+   "lastVerifiedAt": "2026-11-15T04:31:50.533Z"
   },
   {
    "id": "jobkorea-50279842",
@@ -2595,7 +2595,7 @@
    "closedReason": null,
    "firstSeenAt": "2026-11-04T23:59:36.944Z",
    "changedAt": null,
-   "lastVerifiedAt": "2026-11-15T04:27:41.575Z"
+   "lastVerifiedAt": "2026-11-15T04:31:46.026Z"
   },
   {
    "id": "alio306694",
@@ -2659,7 +2659,7 @@
    "closedReason": null,
    "firstSeenAt": "2026-11-04T23:59:36.944Z",
    "changedAt": null,
-   "lastVerifiedAt": "2026-11-15T04:27:43.867Z"
+   "lastVerifiedAt": "2026-11-15T04:31:48.267Z"
   },
   {
    "id": "saramin-55480851",
@@ -3139,7 +3139,7 @@
    "closedReason": null,
    "firstSeenAt": "2026-11-10T00:03:15.317Z",
    "changedAt": null,
-   "lastVerifiedAt": "2026-11-15T04:27:36.866Z"
+   "lastVerifiedAt": "2026-11-15T04:31:42.178Z"
   },
   {
    "id": "alio306862",
@@ -3171,7 +3171,7 @@
    "closedReason": null,
    "firstSeenAt": "2026-11-10T00:03:15.317Z",
    "changedAt": null,
-   "lastVerifiedAt": "2026-11-15T04:27:39.397Z"
+   "lastVerifiedAt": "2026-11-15T04:31:44.118Z"
   },
   {
    "id": "jobkorea-50245981",
@@ -3363,7 +3363,7 @@
    "closedReason": null,
    "firstSeenAt": "2026-11-10T23:59:06.636Z",
    "changedAt": null,
-   "lastVerifiedAt": "2026-11-15T04:27:34.820Z"
+   "lastVerifiedAt": "2026-11-15T04:31:40.107Z"
   },
   {
    "id": "jobkorea-50327218",
@@ -3555,7 +3555,7 @@
    "closedReason": null,
    "firstSeenAt": "2026-11-11T23:58:11.327Z",
    "changedAt": null,
-   "lastVerifiedAt": "2026-11-15T04:27:32.584Z"
+   "lastVerifiedAt": "2026-11-15T04:31:38.065Z"
   },
   {
    "id": "nsu-guide-2027학년도전기1차대학원모집요강",
@@ -3585,7 +3585,7 @@
    "status": "listed",
    "firstSeenAt": "2026-11-11T23:58:11.327Z",
    "changedAt": null,
-   "lastVerifiedAt": "2026-11-15T04:27:12.743Z",
+   "lastVerifiedAt": "2026-11-15T04:31:16.839Z",
    "guideUrl": "https://gr.nsu.ac.kr/attach/c49f41bf61115b0204a2cf9164ca6398/9a9db098b587ee18b321c826f3707a49",
    "guideLabel": "2027학년도 전기 1차 대학원 모집요강 (PDF)"
   },
@@ -3911,7 +3911,7 @@
    "closedReason": null,
    "firstSeenAt": "2026-11-12T01:14:33.124Z",
    "changedAt": null,
-   "lastVerifiedAt": "2026-11-15T04:28:59.682Z"
+   "lastVerifiedAt": "2026-11-15T04:33:29.920Z"
   },
   {
    "id": "eumc-31719",
@@ -3946,7 +3946,7 @@
    "closedReason": null,
    "firstSeenAt": "2026-11-12T01:14:33.124Z",
    "changedAt": null,
-   "lastVerifiedAt": "2026-11-15T04:28:59.682Z"
+   "lastVerifiedAt": "2026-11-15T04:33:29.920Z"
   },
   {
    "id": "seegene-376",
@@ -3979,7 +3979,7 @@
    "closedReason": null,
    "firstSeenAt": "2026-11-12T01:14:33.124Z",
    "changedAt": null,
-   "lastVerifiedAt": "2026-11-15T04:29:04.707Z"
+   "lastVerifiedAt": "2026-11-15T04:34:01.053Z"
   },
   {
    "id": "seegene-375",
@@ -4012,7 +4012,7 @@
    "closedReason": null,
    "firstSeenAt": "2026-11-12T01:14:33.124Z",
    "changedAt": null,
-   "lastVerifiedAt": "2026-11-15T04:29:05.700Z"
+   "lastVerifiedAt": "2026-11-15T04:34:01.979Z"
   },
   {
    "id": "seegene-373",
@@ -4143,7 +4143,7 @@
    "closedReason": null,
    "firstSeenAt": "2026-11-14T00:03:52.096Z",
    "changedAt": null,
-   "lastVerifiedAt": "2026-11-15T04:27:26.513Z"
+   "lastVerifiedAt": "2026-11-15T04:31:31.915Z"
   },
   {
    "id": "alio307020",
@@ -4175,7 +4175,7 @@
    "closedReason": null,
    "firstSeenAt": "2026-11-14T00:03:52.096Z",
    "changedAt": null,
-   "lastVerifiedAt": "2026-11-15T04:27:28.407Z"
+   "lastVerifiedAt": "2026-11-15T04:31:33.906Z"
   },
   {
    "id": "alio306977",
@@ -4207,7 +4207,7 @@
    "closedReason": null,
    "firstSeenAt": "2026-11-14T00:03:52.096Z",
    "changedAt": null,
-   "lastVerifiedAt": "2026-11-15T04:27:30.366Z"
+   "lastVerifiedAt": "2026-11-15T04:31:35.969Z"
   },
   {
    "id": "jobkorea-50344684",
@@ -4337,7 +4337,7 @@
    "closedReason": null,
    "firstSeenAt": "2026-11-14T00:03:52.096Z",
    "changedAt": null,
-   "lastVerifiedAt": "2026-11-15T04:28:56.977Z"
+   "lastVerifiedAt": "2026-11-15T04:33:03.397Z"
   },
   {
    "id": "saramin-55547216",
@@ -4398,7 +4398,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.975Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.397Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -4427,7 +4427,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.975Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.397Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -4456,7 +4456,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.975Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.397Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -4486,7 +4486,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.975Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.397Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -4516,7 +4516,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.975Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.397Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -4545,7 +4545,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.975Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.397Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -4575,7 +4575,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.975Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.397Z",
    "deadlineLabel": "채용시",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
@@ -4605,7 +4605,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.976Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.397Z",
    "deadlineLabel": "채용시",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
@@ -4635,7 +4635,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.976Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.397Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -4664,7 +4664,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.976Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.397Z",
    "deadlineLabel": "채용시",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
@@ -4694,7 +4694,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.976Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.397Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -4724,7 +4724,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.976Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.397Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -4753,7 +4753,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.976Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.397Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -4782,7 +4782,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.976Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.397Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -4812,7 +4812,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.976Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.397Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -4842,7 +4842,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.977Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.397Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -4871,7 +4871,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.977Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.397Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -4900,7 +4900,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.977Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.397Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -4929,7 +4929,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.977Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.397Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -4958,7 +4958,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.977Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.397Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -4988,7 +4988,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.977Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.397Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5017,7 +5017,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.977Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.397Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5046,7 +5046,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.977Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.397Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5075,7 +5075,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.977Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.397Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5104,7 +5104,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.977Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.397Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5134,7 +5134,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.977Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.397Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5163,7 +5163,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.977Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.397Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5192,7 +5192,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.977Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.397Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5221,7 +5221,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.977Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.397Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5250,7 +5250,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.977Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.397Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5279,7 +5279,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.977Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.398Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5308,7 +5308,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.977Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.398Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5337,7 +5337,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.977Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.398Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5366,7 +5366,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.977Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.398Z",
    "deadlineLabel": "채용시",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
@@ -5396,7 +5396,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.977Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.398Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5426,7 +5426,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.977Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.398Z",
    "deadlineLabel": "상시채용",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
@@ -5456,7 +5456,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.977Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.398Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5486,7 +5486,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.977Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.398Z",
    "deadlineLabel": "상시채용",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
@@ -5516,7 +5516,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.977Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.398Z",
    "deadlineLabel": "채용시",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
@@ -5547,7 +5547,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.977Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.398Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5576,7 +5576,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.977Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.398Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5605,7 +5605,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.977Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.398Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5634,7 +5634,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.977Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.398Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5663,7 +5663,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.977Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.398Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5692,7 +5692,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.977Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.398Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5721,7 +5721,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.977Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.398Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5751,7 +5751,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.977Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.398Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5781,7 +5781,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.977Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.398Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5810,7 +5810,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.977Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.398Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5839,7 +5839,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.977Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.398Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5868,7 +5868,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.977Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.398Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5897,7 +5897,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.977Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.398Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5927,7 +5927,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.977Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.398Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5957,7 +5957,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.977Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.398Z",
    "deadlineLabel": "채용시",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
@@ -5987,7 +5987,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.977Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.398Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -6134,7 +6134,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.975Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.397Z",
    "firstSeenAt": "2026-11-14T23:54:46.445Z"
   },
   {
@@ -6163,7 +6163,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.975Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.397Z",
    "firstSeenAt": "2026-11-14T23:54:46.445Z"
   },
   {
@@ -6192,7 +6192,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.977Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.397Z",
    "firstSeenAt": "2026-11-14T23:54:46.445Z"
   },
   {
@@ -6286,7 +6286,7 @@
    "checked": "2026-11-15",
    "sourceId": "yonsei-fall",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:27:10.608Z",
+   "lastVerifiedAt": "2026-11-15T04:31:15.013Z",
    "startDate": "2027-04-06",
    "deadlineTime": "17:00",
    "guideUrl": "https://graduate.yonsei.ac.kr/_res/graduate/etc/guide_m_2026-1.pdf",
@@ -6325,7 +6325,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.975Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.397Z",
    "firstSeenAt": "2026-11-15T02:00:19.829Z"
   },
   {
@@ -6355,7 +6355,7 @@
    "checked": "2026-11-15",
    "sourceId": "gojobs",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:26:44.718Z",
+   "lastVerifiedAt": "2026-11-15T04:30:38.792Z",
    "startDate": "2026-11-13",
    "firstSeenAt": "2026-11-15T04:22:32.729Z"
   },
@@ -6369,7 +6369,7 @@
    "condition": "고용형태 원문 확인",
    "career": "신입/경력",
    "degree": "대졸(2~3년)",
-   "deadline": "",
+   "deadline": "2026-11-18",
    "posted": "2026-11-13",
    "kind": "채용 공고",
    "tags": [
@@ -6377,7 +6377,7 @@
     "자동 수집",
     "회사내규에 따름"
    ],
-   "summary": "가톨릭대학교 은평성모병원 · 서울 · 신입/경력 · 대졸(2~3년) · 접수 마감 원문 확인",
+   "summary": "가톨릭대학교 은평성모병원 · 서울 · 신입/경력 · 대졸(2~3년) · 접수 마감 2026-11-18",
    "qualification": "임상병리사 면허 등 세부 지원 자격은 원문에서 확인하세요.",
    "benefit": "급여 회사내규에 따름 · 주5일 · 근무지 서울 은평구",
    "documents": "제출 서류와 양식은 원문에서 확인",
@@ -6386,7 +6386,7 @@
    "checked": "2026-11-15",
    "sourceId": "work24",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:26:47.362Z",
+   "lastVerifiedAt": "2026-11-15T04:30:41.247Z",
    "firstSeenAt": "2026-11-15T04:22:32.729Z"
   },
   {
@@ -6416,7 +6416,7 @@
    "checked": "2026-11-15",
    "sourceId": "work24",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:26:47.362Z",
+   "lastVerifiedAt": "2026-11-15T04:30:41.247Z",
    "deadlineLabel": "채용시",
    "firstSeenAt": "2026-11-15T04:22:32.729Z"
   },
@@ -6447,7 +6447,7 @@
    "checked": "2026-11-15",
    "sourceId": "work24",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:26:47.362Z",
+   "lastVerifiedAt": "2026-11-15T04:30:41.247Z",
    "deadlineLabel": "채용시",
    "firstSeenAt": "2026-11-15T04:22:32.729Z"
   },
@@ -6478,7 +6478,7 @@
    "checked": "2026-11-15",
    "sourceId": "work24",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:26:47.362Z",
+   "lastVerifiedAt": "2026-11-15T04:30:41.247Z",
    "deadlineLabel": "채용시",
    "firstSeenAt": "2026-11-15T04:22:32.729Z"
   },
@@ -6492,7 +6492,7 @@
    "condition": "고용형태 원문 확인",
    "career": "경력1년",
    "degree": "대졸(2~3년)",
-   "deadline": "",
+   "deadline": "2026-11-18",
    "posted": "2026-11-04",
    "kind": "채용 공고",
    "tags": [
@@ -6500,7 +6500,7 @@
     "자동 수집",
     "월급 245 만원 ~ 245 만원"
    ],
-   "summary": "숨이편한 내과 · 전남 · 경력1년 · 대졸(2~3년) · 접수 마감 원문 확인",
+   "summary": "숨이편한 내과 · 전남 · 경력1년 · 대졸(2~3년) · 접수 마감 2026-11-18",
    "qualification": "임상병리사 면허 등 세부 지원 자격은 원문에서 확인하세요.",
    "benefit": "급여 월급 245 만원 ~ 245 만원 · 주6일 · 주 37시간 근로 · 근무지 전남광주통합특별시 순천시 해룡면",
    "documents": "제출 서류와 양식은 원문에서 확인",
@@ -6509,7 +6509,7 @@
    "checked": "2026-11-15",
    "sourceId": "work24",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:26:47.362Z",
+   "lastVerifiedAt": "2026-11-15T04:30:41.248Z",
    "firstSeenAt": "2026-11-15T04:22:32.729Z"
   },
   {
@@ -6522,7 +6522,7 @@
    "condition": "고용형태 원문 확인",
    "career": "경력무관",
    "degree": "대졸(2~3년) ~ 대졸(4년)",
-   "deadline": "",
+   "deadline": "2026-11-20",
    "posted": "2026-11-02",
    "kind": "채용 공고",
    "tags": [
@@ -6530,7 +6530,7 @@
     "자동 수집",
     "월급 235 만원 ~ 235 만원"
    ],
-   "summary": "동해이레요양병원 · 강원 · 경력무관 · 대졸(2~3년) ~ 대졸(4년) · 접수 마감 원문 확인",
+   "summary": "동해이레요양병원 · 강원 · 경력무관 · 대졸(2~3년) ~ 대졸(4년) · 접수 마감 2026-11-20",
    "qualification": "임상병리사 면허 등 세부 지원 자격은 원문에서 확인하세요.",
    "benefit": "급여 월급 235 만원 ~ 235 만원 · 주5일 · 주 40시간 근로 · 근무지 강원도 동해시 덕골길",
    "documents": "제출 서류와 양식은 원문에서 확인",
@@ -6539,7 +6539,7 @@
    "checked": "2026-11-15",
    "sourceId": "work24",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:26:47.362Z",
+   "lastVerifiedAt": "2026-11-15T04:30:41.248Z",
    "firstSeenAt": "2026-11-15T04:22:32.729Z"
   },
   {
@@ -6569,7 +6569,7 @@
    "checked": "2026-11-15",
    "sourceId": "work24",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:26:47.362Z",
+   "lastVerifiedAt": "2026-11-15T04:30:41.248Z",
    "deadlineLabel": "채용시",
    "firstSeenAt": "2026-11-15T04:22:32.729Z"
   },
@@ -6583,7 +6583,7 @@
    "condition": "고용형태 원문 확인",
    "career": "신입/경력",
    "degree": "대졸(2~3년)",
-   "deadline": "",
+   "deadline": "2026-11-29",
    "posted": "2026-10-30",
    "kind": "채용 공고",
    "tags": [
@@ -6591,7 +6591,7 @@
     "자동 수집",
     "연봉 2,900 만원 ~ 2,900 만원"
    ],
-   "summary": "광교신경과의원 · 경기 · 신입/경력 · 대졸(2~3년) · 접수 마감 원문 확인",
+   "summary": "광교신경과의원 · 경기 · 신입/경력 · 대졸(2~3년) · 접수 마감 2026-11-29",
    "qualification": "임상병리사 면허 등 세부 지원 자격은 원문에서 확인하세요.",
    "benefit": "급여 연봉 2,900 만원 ~ 2,900 만원 · 근무지 경기 용인시 수지구 등",
    "documents": "제출 서류와 양식은 원문에서 확인",
@@ -6600,7 +6600,7 @@
    "checked": "2026-11-15",
    "sourceId": "work24",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:26:47.363Z",
+   "lastVerifiedAt": "2026-11-15T04:30:41.248Z",
    "firstSeenAt": "2026-11-15T04:22:32.729Z"
   },
   {
@@ -6630,7 +6630,7 @@
    "checked": "2026-11-15",
    "sourceId": "work24",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:26:47.363Z",
+   "lastVerifiedAt": "2026-11-15T04:30:41.248Z",
    "deadlineLabel": "채용시",
    "firstSeenAt": "2026-11-15T04:22:32.729Z"
   },
@@ -6661,7 +6661,7 @@
    "checked": "2026-11-15",
    "sourceId": "work24",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:26:47.363Z",
+   "lastVerifiedAt": "2026-11-15T04:30:41.248Z",
    "deadlineLabel": "채용시",
    "firstSeenAt": "2026-11-15T04:22:32.729Z"
   },
@@ -6675,7 +6675,7 @@
    "condition": "고용형태 원문 확인",
    "career": "경력1년",
    "degree": "학력무관",
-   "deadline": "",
+   "deadline": "2026-12-16",
    "posted": "2026-10-20",
    "kind": "채용 공고",
    "tags": [
@@ -6683,7 +6683,7 @@
     "자동 수집",
     "월급 230 만원 ~ 240 만원"
    ],
-   "summary": "세인요양병원 · 부산 · 경력1년 · 학력무관 · 접수 마감 원문 확인",
+   "summary": "세인요양병원 · 부산 · 경력1년 · 학력무관 · 접수 마감 2026-12-16",
    "qualification": "임상병리사 면허 등 세부 지원 자격은 원문에서 확인하세요.",
    "benefit": "급여 월급 230 만원 ~ 240 만원 · 주5일 · 주 40시간 근로 · 09:00 ~ 17:30 · 근무지 부산광역시 동래구 여고로",
    "documents": "제출 서류와 양식은 원문에서 확인",
@@ -6692,7 +6692,7 @@
    "checked": "2026-11-15",
    "sourceId": "work24",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:26:47.363Z",
+   "lastVerifiedAt": "2026-11-15T04:30:41.248Z",
    "firstSeenAt": "2026-11-15T04:22:32.729Z"
   },
   {
@@ -6713,7 +6713,7 @@
     "자동 수집",
     "연봉 3,000 만원 ~ 3,500 만원"
    ],
-   "summary": "의료법인 나래의료재단 나래의원 · 경기 · 경력2년 · 학력무관 · 접수 마감 원문 확인",
+   "summary": "의료법인 나래의료재단 나래의원 · 경기 · 경력2년 · 학력무관 · 채용시",
    "qualification": "임상병리사 면허 등 세부 지원 자격은 원문에서 확인하세요.",
    "benefit": "급여 연봉 3,000 만원 ~ 3,500 만원 · 주6일 · 근무지 경기 안양시 동안구 등",
    "documents": "제출 서류와 양식은 원문에서 확인",
@@ -6722,8 +6722,9 @@
    "checked": "2026-11-15",
    "sourceId": "work24",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:26:47.363Z",
-   "firstSeenAt": "2026-11-15T04:22:32.729Z"
+   "lastVerifiedAt": "2026-11-15T04:30:41.248Z",
+   "firstSeenAt": "2026-11-15T04:22:32.729Z",
+   "deadlineLabel": "채용시"
   },
   {
    "id": "work24-K162212610190026",
@@ -6752,7 +6753,7 @@
    "checked": "2026-11-15",
    "sourceId": "work24",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:26:47.363Z",
+   "lastVerifiedAt": "2026-11-15T04:30:41.248Z",
    "deadlineLabel": "채용시",
    "firstSeenAt": "2026-11-15T04:22:32.729Z"
   },
@@ -6783,7 +6784,7 @@
    "checked": "2026-11-15",
    "sourceId": "work24",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:26:47.363Z",
+   "lastVerifiedAt": "2026-11-15T04:30:41.248Z",
    "deadlineLabel": "채용시",
    "firstSeenAt": "2026-11-15T04:22:32.729Z"
   },
@@ -6814,7 +6815,7 @@
    "checked": "2026-11-15",
    "sourceId": "work24",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:26:47.363Z",
+   "lastVerifiedAt": "2026-11-15T04:30:41.248Z",
    "deadlineLabel": "채용시",
    "firstSeenAt": "2026-11-15T04:22:32.729Z"
   },
@@ -6828,7 +6829,7 @@
    "condition": "고용형태 원문 확인",
    "career": "경력무관",
    "degree": "대졸(2~3년) ~ 대졸(4년)",
-   "deadline": "",
+   "deadline": "2026-12-14",
    "posted": "2026-10-15",
    "kind": "채용 공고",
    "tags": [
@@ -6836,7 +6837,7 @@
     "자동 수집",
     "월급 260 만원 이상"
    ],
-   "summary": "이노스 이비인후과 · 전남 · 경력무관 · 대졸(2~3년) ~ 대졸(4년) · 접수 마감 원문 확인",
+   "summary": "이노스 이비인후과 · 전남 · 경력무관 · 대졸(2~3년) ~ 대졸(4년) · 접수 마감 2026-12-14",
    "qualification": "임상병리사 면허 등 세부 지원 자격은 원문에서 확인하세요.",
    "benefit": "급여 월급 260 만원 이상 · 주5일 · 주 40시간 근로 · 근무지 전남광주통합특별시 순천시 봉화3길",
    "documents": "제출 서류와 양식은 원문에서 확인",
@@ -6845,7 +6846,7 @@
    "checked": "2026-11-15",
    "sourceId": "work24",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:26:47.363Z",
+   "lastVerifiedAt": "2026-11-15T04:30:41.249Z",
    "firstSeenAt": "2026-11-15T04:22:32.729Z"
   },
   {
@@ -6875,7 +6876,7 @@
    "checked": "2026-11-15",
    "sourceId": "work24",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:26:47.363Z",
+   "lastVerifiedAt": "2026-11-15T04:30:41.249Z",
    "deadlineLabel": "채용시",
    "firstSeenAt": "2026-11-15T04:22:32.729Z"
   },
@@ -6897,7 +6898,7 @@
     "자동 수집",
     "회사내규에 따름"
    ],
-   "summary": "광교신경과의원 · 경기 · 경력무관 · 대졸(2~3년) · 접수 마감 원문 확인",
+   "summary": "광교신경과의원 · 경기 · 경력무관 · 대졸(2~3년) · 채용시",
    "qualification": "임상병리사 면허 등 세부 지원 자격은 원문에서 확인하세요.",
    "benefit": "급여 회사내규에 따름 · 근무지 경기 용인시 수지구 등",
    "documents": "제출 서류와 양식은 원문에서 확인",
@@ -6906,8 +6907,9 @@
    "checked": "2026-11-15",
    "sourceId": "work24",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:26:47.363Z",
-   "firstSeenAt": "2026-11-15T04:22:32.729Z"
+   "lastVerifiedAt": "2026-11-15T04:30:41.249Z",
+   "firstSeenAt": "2026-11-15T04:22:32.729Z",
+   "deadlineLabel": "채용시"
   },
   {
    "id": "work24-KN50102609210003",
@@ -6936,7 +6938,7 @@
    "checked": "2026-11-15",
    "sourceId": "work24",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:26:47.363Z",
+   "lastVerifiedAt": "2026-11-15T04:30:41.249Z",
    "deadlineLabel": "채용시",
    "firstSeenAt": "2026-11-15T04:22:32.729Z"
   },
@@ -6967,7 +6969,7 @@
    "checked": "2026-11-15",
    "sourceId": "work24",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:26:47.363Z",
+   "lastVerifiedAt": "2026-11-15T04:30:41.249Z",
    "deadlineLabel": "채용시",
    "firstSeenAt": "2026-11-15T04:22:32.729Z"
   },
@@ -6998,7 +7000,7 @@
    "checked": "2026-11-15",
    "sourceId": "eulji",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:26:49.358Z",
+   "lastVerifiedAt": "2026-11-15T04:30:43.313Z",
    "firstSeenAt": "2026-11-15T04:22:32.729Z"
   },
   {
@@ -7028,7 +7030,7 @@
    "checked": "2026-11-15",
    "sourceId": "eulji",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:26:49.358Z",
+   "lastVerifiedAt": "2026-11-15T04:30:43.313Z",
    "firstSeenAt": "2026-11-15T04:22:32.729Z"
   },
   {
@@ -7058,7 +7060,7 @@
    "checked": "2026-11-15",
    "sourceId": "deu",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:27:04.945Z",
+   "lastVerifiedAt": "2026-11-15T04:30:58.944Z",
    "guideUrl": "https://grd.deu.ac.kr/grd/sub02_01.do?mode=download&articleNo=501276&attachNo=143747",
    "guideLabel": "2027학년도 전기 대학원 신입생 모집요강 (원본 파일)",
    "firstSeenAt": "2026-11-15T04:22:32.729Z"
@@ -7122,7 +7124,7 @@
    "checked": "2026-11-15",
    "sourceId": "alio",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:27:54.722Z",
+   "lastVerifiedAt": "2026-11-15T04:31:59.528Z",
    "firstSeenAt": "2026-11-15T04:22:32.729Z"
   },
   {
@@ -7152,7 +7154,7 @@
    "checked": "2026-11-15",
    "sourceId": "alio",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:36.269Z",
+   "lastVerifiedAt": "2026-11-15T04:32:38.126Z",
    "firstSeenAt": "2026-11-15T04:22:32.729Z"
   },
   {
@@ -7182,7 +7184,7 @@
    "checked": "2026-11-15",
    "sourceId": "alio",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:40.487Z",
+   "lastVerifiedAt": "2026-11-15T04:32:42.528Z",
    "firstSeenAt": "2026-11-15T04:22:32.729Z"
   },
   {
@@ -7211,7 +7213,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.975Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.396Z",
    "firstSeenAt": "2026-11-15T04:22:32.729Z"
   },
   {
@@ -7241,7 +7243,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T04:28:56.975Z",
+   "lastVerifiedAt": "2026-11-15T04:33:03.397Z",
    "firstSeenAt": "2026-11-15T04:22:32.729Z"
   }
  ],
@@ -7249,39 +7251,39 @@
   {
    "id": "gojobs",
    "status": "success",
-   "checkedAt": "2026-11-15T04:26:39.067Z",
+   "checkedAt": "2026-11-15T04:30:32.926Z",
    "count": 1,
    "message": "공개 페이지 확인 완료",
-   "lastSuccessAt": "2026-11-15T04:26:39.067Z"
+   "lastSuccessAt": "2026-11-15T04:30:32.926Z"
   },
   {
    "id": "work24",
    "status": "success",
-   "checkedAt": "2026-11-15T04:26:39.067Z",
+   "checkedAt": "2026-11-15T04:30:32.926Z",
    "count": 20,
    "message": "공개 페이지 확인 완료",
-   "lastSuccessAt": "2026-11-15T04:26:39.067Z"
+   "lastSuccessAt": "2026-11-15T04:30:32.926Z"
   },
   {
    "id": "eulji",
    "status": "success",
-   "checkedAt": "2026-11-15T04:26:39.067Z",
+   "checkedAt": "2026-11-15T04:30:32.926Z",
    "count": 2,
    "message": "공개 페이지 확인 완료",
-   "lastSuccessAt": "2026-11-15T04:26:39.067Z"
+   "lastSuccessAt": "2026-11-15T04:30:32.926Z"
   },
   {
    "id": "deu",
    "status": "success",
-   "checkedAt": "2026-11-15T04:26:39.067Z",
+   "checkedAt": "2026-11-15T04:30:32.926Z",
    "count": 1,
    "message": "공개 페이지 확인 완료",
-   "lastSuccessAt": "2026-11-15T04:26:39.067Z"
+   "lastSuccessAt": "2026-11-15T04:30:32.926Z"
   },
   {
    "id": "kyungwoon",
    "status": "failed",
-   "checkedAt": "2026-11-15T04:26:39.067Z",
+   "checkedAt": "2026-11-15T04:30:32.926Z",
    "count": 0,
    "message": "fetch failed",
    "lastSuccessAt": "2026-11-15T04:22:32.729Z"
@@ -7292,10 +7294,10 @@
    "name": "연세대 미래캠퍼스 · 전기 일반전형",
    "url": "https://graduate.yonsei.ac.kr/graduate/admission/general_schedule.do",
    "status": "success",
-   "checkedAt": "2026-11-15T04:26:39.067Z",
+   "checkedAt": "2026-11-15T04:30:32.926Z",
    "count": 1,
    "message": "공개 페이지 확인 완료",
-   "lastSuccessAt": "2026-11-15T04:26:39.067Z"
+   "lastSuccessAt": "2026-11-15T04:30:32.926Z"
   },
   {
    "id": "yonsei-fall",
@@ -7303,10 +7305,10 @@
    "name": "연세대 미래캠퍼스 · 후기 일반전형",
    "url": "https://graduate.yonsei.ac.kr/graduate/admission/general_fall_schedule.do",
    "status": "success",
-   "checkedAt": "2026-11-15T04:26:39.067Z",
+   "checkedAt": "2026-11-15T04:30:32.926Z",
    "count": 1,
    "message": "공개 페이지 확인 완료",
-   "lastSuccessAt": "2026-11-15T04:26:39.067Z"
+   "lastSuccessAt": "2026-11-15T04:30:32.926Z"
   },
   {
    "id": "nsu-admissions",
@@ -7314,10 +7316,10 @@
    "name": "남서울대학교 대학원 · 모집요강",
    "url": "https://gr.nsu.ac.kr/kor/21/pdfViewer/CAT006",
    "status": "success",
-   "checkedAt": "2026-11-15T04:26:39.067Z",
+   "checkedAt": "2026-11-15T04:30:32.926Z",
    "count": 1,
    "message": "공개 페이지 확인 완료",
-   "lastSuccessAt": "2026-11-15T04:26:39.067Z"
+   "lastSuccessAt": "2026-11-15T04:30:32.926Z"
   },
   {
    "id": "nsu",
@@ -7325,10 +7327,10 @@
    "name": "남서울대학교 대학원 · 공지사항",
    "url": "https://gr.nsu.ac.kr/kor/article/notice?searchCondition=1&searchKeyword=%EB%AA%A8%EC%A7%91",
    "status": "success",
-   "checkedAt": "2026-11-15T04:26:39.067Z",
+   "checkedAt": "2026-11-15T04:30:32.926Z",
    "count": 0,
    "message": "공개 페이지 확인 완료",
-   "lastSuccessAt": "2026-11-15T04:26:39.067Z"
+   "lastSuccessAt": "2026-11-15T04:30:32.926Z"
   },
   {
    "id": "seoyeong",
@@ -7336,10 +7338,10 @@
    "name": "서영대학교 대학원 · 입학 안내",
    "url": "https://jspjchild.seoyeong.ac.kr/grad/na/ntt/selectNttList.do?bbsId=781&mi=4146",
    "status": "success",
-   "checkedAt": "2026-11-15T04:26:39.067Z",
+   "checkedAt": "2026-11-15T04:30:32.926Z",
    "count": 2,
    "message": "공개 페이지 확인 완료",
-   "lastSuccessAt": "2026-11-15T04:26:39.067Z"
+   "lastSuccessAt": "2026-11-15T04:30:32.926Z"
   },
   {
    "id": "alio",
@@ -7347,10 +7349,10 @@
    "name": "잡알리오 · 임상병리 채용",
    "url": "https://job.alio.go.kr/recruit.do?search_type=title&keyword=%EC%9E%84%EC%83%81%EB%B3%91%EB%A6%AC&pageSet=50",
    "status": "success",
-   "checkedAt": "2026-11-15T04:26:39.067Z",
+   "checkedAt": "2026-11-15T04:30:32.926Z",
    "count": 14,
    "message": "공개 페이지 확인 완료",
-   "lastSuccessAt": "2026-11-15T04:26:39.067Z"
+   "lastSuccessAt": "2026-11-15T04:30:32.926Z"
   },
   {
    "id": "saramin",
@@ -7358,20 +7360,20 @@
    "name": "사람인 · 임상병리 공개 채용",
    "url": "https://www.saramin.co.kr/zf_user/search?searchword=%EC%9E%84%EC%83%81%EB%B3%91%EB%A6%AC&recruitPageCount=40",
    "status": "success",
-   "checkedAt": "2026-11-15T04:26:39.067Z",
+   "checkedAt": "2026-11-15T04:30:32.926Z",
    "count": 62,
    "message": "공개 페이지 확인 완료",
-   "lastSuccessAt": "2026-11-15T04:26:39.067Z"
+   "lastSuccessAt": "2026-11-15T04:30:32.926Z"
   },
   {
    "id": "jobkorea",
    "type": "job",
    "name": "잡코리아 · 임상병리 공개 채용",
    "url": "https://www.jobkorea.co.kr/Search/?stext=%EC%9E%84%EC%83%81%EB%B3%91%EB%A6%AC",
-   "status": "success",
-   "checkedAt": "2026-11-15T04:26:39.067Z",
-   "count": 10,
-   "message": "공개 페이지 확인 완료",
+   "status": "failed",
+   "checkedAt": "2026-11-15T04:30:32.926Z",
+   "count": 0,
+   "message": "fetch failed",
    "lastSuccessAt": "2026-11-15T04:26:39.067Z"
   },
   {
@@ -7380,10 +7382,10 @@
    "name": "이화의료원 · 임상병리 채용",
    "url": "https://www.eumc.ac.kr/intro/recrut/list.do",
    "status": "success",
-   "checkedAt": "2026-11-15T04:26:39.067Z",
+   "checkedAt": "2026-11-15T04:30:32.926Z",
    "count": 2,
    "message": "공개 페이지 확인 완료",
-   "lastSuccessAt": "2026-11-15T04:26:39.067Z"
+   "lastSuccessAt": "2026-11-15T04:30:32.926Z"
   },
   {
    "id": "seegene",
@@ -7391,10 +7393,10 @@
    "name": "씨젠의료재단 · 검사 전문인력 채용",
    "url": "https://pr.seegenemedical.com/board/recruit/index.do",
    "status": "success",
-   "checkedAt": "2026-11-15T04:26:39.067Z",
+   "checkedAt": "2026-11-15T04:30:32.926Z",
    "count": 2,
    "message": "공개 페이지 확인 완료",
-   "lastSuccessAt": "2026-11-15T04:26:39.067Z"
+   "lastSuccessAt": "2026-11-15T04:30:32.926Z"
   },
   {
    "id": "nursenet",
@@ -7496,8 +7498,8 @@
    "lastSuccessAt": null
   }
  ],
- "lastAttemptAt": "2026-11-15T04:26:39.067Z",
- "lastSuccessAt": "2026-11-15T04:26:39.067Z",
+ "lastAttemptAt": "2026-11-15T04:30:32.926Z",
+ "lastSuccessAt": "2026-11-15T04:30:32.926Z",
  "status": "partial",
  "added": 0,
  "changed": 0,
@@ -7508,5 +7510,5 @@
   "via": "github-actions",
   "repo": "javingsu/labpath"
  },
- "previousSuccessAt": "2026-11-15T04:22:32.729Z"
+ "previousSuccessAt": "2026-11-15T04:26:39.067Z"
 }

@@ -13,7 +13,13 @@ const REPO = process.env.GITHUB_REPOSITORY || '';
 const UA = `Mozilla/5.0 (compatible; LabpathCollector/1.0; personal job alert${REPO ? '; +https://github.com/' + REPO : ''})`;
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
-async function get(url) {
+async function get(url, tries = 2) {
+  for (let i = 1; ; i++) {
+    try { return await getOnce(url); }
+    catch (e) { if (i >= tries || /응답 오류 \((4\d\d)\)/.test(e.message)) throw e; await sleep(4000); } // 일시적인 연결 실패만 한 번 더
+  }
+}
+async function getOnce(url) {
   const res = await fetch(url, { headers: { 'User-Agent': UA, Accept: 'text/html,application/xhtml+xml', 'Accept-Language': 'ko-KR,ko;q=0.9' }, redirect: 'follow', signal: AbortSignal.timeout(25000) });
   if (!res.ok) throw new Error(`원문 응답 오류 (${res.status})`);
   return res.text();

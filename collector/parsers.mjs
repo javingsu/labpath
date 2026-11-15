@@ -145,8 +145,8 @@ export function parseSeegeneDetail(html) {
   const t = text(html.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/g, ''));
   const a = t.indexOf('[필수요건]'), b = t.indexOf('처우', a);
   const qualification = a >= 0 ? t.slice(a, b > a ? Math.min(b, a + 900) : a + 600).replace(/\s*\d\.\s*$/, '').trim() : '';
-  const region = (t.match(/\((?:[^()]*\()?\s*(서울|부산|대구|인천|광주|대전|울산|세종|경기|강원|충북|충남|전북|전남|경북|경남|제주)[^)]*\)/) || [])[1] || '';
-  return { qualification, region, relevant: /임상병리/.test(t) };
+  const m = t.match(/\((?:[^()]*\()?\s*((서울|부산|대구|인천|광주|대전|울산|세종|경기|강원|충북|충남|전북|전남|경북|경남|제주)[^)]*)\)/);
+  return { qualification, region: m ? m[2] : '', location: m ? m[1] : '', relevant: /임상병리/.test(t) };
 }
 
 /* ── 공통: 랩패스 공고 형식으로 변환 ── */
@@ -154,7 +154,9 @@ export function makeItem(src, o, now = new Date()) {
   const d = dates(now);
   const dl = o.deadline !== undefined ? { deadline: o.deadline, label: o.deadlineLabel } : d.deadline(o.deadlineText || '');
   const multi = o.integrated || /,|，|\//.test(o.title.replace(/\[[^\]]*\]/g, '')) && /임상병리/.test(o.title) && /간호|원무|방사선|조무|시설|기계|전기|응급|사무/.test(o.title);
-  const region = clean(o.region).replace(/\s.*$/, '') || '지역 확인';
+  let location = normLocation(o.location || o.region);
+  if (!location.includes(' ')) location = knownPlace(o.org + ' ' + o.title) || location;
+  const region = (location || clean(o.region)).split(' ')[0] || '지역 확인';
   const bits = [o.org, region, o.career, o.degree, o.condition, dl.deadline ? '접수 마감 ' + dl.deadline : (dl.label || '접수 마감 원문 확인')].filter(Boolean);
   const item = {
     id: src.prefix + o.key, type: 'job', org: clean(o.org) || '기관명 확인', title: clean(o.title), region,
@@ -169,6 +171,7 @@ export function makeItem(src, o, now = new Date()) {
     source: src.label + (o.sourceOrg ? ' · ' + o.sourceOrg : ''), url: o.url, checked: d.today,
     sourceId: src.id, status: 'listed', lastVerifiedAt: now.toISOString()
   };
+  if (location && location.includes(' ')) item.location = location;
   if (o.startDate) item.startDate = o.startDate;
   if (o.deadlineTime) item.deadlineTime = o.deadlineTime;
   if (!dl.deadline && dl.label) item.deadlineLabel = dl.label;
@@ -248,7 +251,7 @@ export function makeGradItem(o, now = new Date()) {
     benefit: o.benefit || '등록금·장학금·수업 시간 원문 확인 필요', documents: o.documents || '해당 연도 전형 서류는 공식 요강에서 확인',
     source: o.source, url: o.url, checked: today, sourceId: o.sourceId, status: 'listed', lastVerifiedAt: now.toISOString()
   };
-  for (const k of ['startDate', 'deadlineTime', 'guideUrl', 'guideLabel', 'admissionSchedule']) if (o[k]) item[k] = o[k];
+  for (const k of ['startDate', 'deadlineTime', 'guideUrl', 'guideLabel', 'admissionSchedule', 'location']) if (o[k]) item[k] = o[k];
   return item;
 }
 
@@ -309,4 +312,35 @@ export function parseEuljiMain(html) {
   })).filter(r => r.title);
   if (!rows.length) throw new Error('을지대 대학원 공지 목록을 찾지 못했습니다');
   return [...new Map(rows.map(r => [r.key, r])).values()];
+}
+
+/* ── 근무지 상세(시·군·구) ── */
+const PROVINCE = { 서울특별시: '서울', 부산광역시: '부산', 대구광역시: '대구', 인천광역시: '인천', 광주광역시: '광주', 대전광역시: '대전', 울산광역시: '울산', 세종특별자치시: '세종', 세종시: '세종', 경기도: '경기', 강원도: '강원', 강원특별자치도: '강원', 충청북도: '충북', 충청남도: '충남', 전라북도: '전북', 전북특별자치도: '전북', 전라남도: '전남', 경상북도: '경북', 경상남도: '경남', 제주도: '제주', 제주특별자치도: '제주', 전남광주통합특별시: '전남광주' };
+const PROVINCES = new Set(['서울', '부산', '대구', '인천', '광주', '대전', '울산', '세종', '경기', '강원', '충북', '충남', '전북', '전남', '경북', '경남', '제주', '전남광주']);
+/** "경기도 수원시 팔달구 …" → "경기 수원시 팔달구" (광역 + 시·군·구 + 구·읍·면까지) */
+export function normLocation(s) {
+  const toks = clean(s).replace(/[()[\]]/g, ' ').split(/[\s,]+/).filter(Boolean);
+  if (!toks.length) return '';
+  const first = PROVINCE[toks[0]] || toks[0];
+  if (!PROVINCES.has(first)) return '';
+  const out = [first];
+  for (const t of toks.slice(1)) { if (out.length >= 3 || !/^[가-힣]+(시|군|구|읍|면)$/.test(t)) break; out.push(t); }
+  return out.join(' ');
+}
+/** 기관 소재지(자주 나오는 공공·대형 병원). 더 구체적인 이름을 먼저 둔다 */
+const KNOWN_PLACES = [
+  ['칠곡경북대', '대구 북구'], ['경북대학교병원', '대구 중구'], ['화순전남대', '전남 화순군'], ['전남대학교병원', '광주 동구'],
+  ['분당서울대', '경기 성남시 분당구'], ['서울대학교병원', '서울 종로구'], ['보라매병원', '서울 동작구'], ['국립중앙의료원', '서울 중구'],
+  ['국립암센터', '경기 고양시 일산동구'], ['일산병원', '경기 고양시 일산동구'], ['이대목동', '서울 양천구'], ['목동병원', '서울 양천구'], ['이대서울', '서울 강서구'],
+  ['강동성심', '서울 강동구'], ['한양대학교병원', '서울 성동구'], ['세종충남대', '세종'], ['충남대학교병원', '대전 중구'], ['충북대학교병원', '충북 청주시 서원구'],
+  ['제주대학교병원', '제주 제주시'], ['양산부산대', '경남 양산시'], ['부산대학교병원', '부산 서구'], ['전북대학교병원', '전북 전주시 덕진구'], ['강원대학교병원', '강원 춘천시'],
+  ['경상국립대학교병원', '경남 진주시'], ['동아대학교', '부산 서구'], ['대구동산병원', '대구 중구'], ['대구파티마', '대구 동구'], ['강릉아산', '강원 강릉시'], ['원광대학교병원', '전북 익산시'],
+  ['대전을지', '대전 서구'], ['중앙보훈', '서울 강동구'], ['광주보훈', '광주 광산구'], ['대전보훈', '대전 대덕구'], ['부산보훈', '부산 사상구'], ['대구보훈', '대구 달서구'],
+  ['창원병원', '경남 창원시 성산구'], ['인천적십자병원', '인천 연수구'], ['원자력의학원', '서울 노원구'], ['GCLabs', '경기 용인시 기흥구'], ['녹십자의료재단', '경기 용인시 기흥구'], ['서울의과학연구소', '경기 용인시 기흥구']
+];
+export function knownPlace(text) {
+  text = String(text || '');
+  if (/\[세종\]/.test(text)) return '세종';
+  const hit = KNOWN_PLACES.find(([k]) => text.includes(k));
+  return hit ? hit[1] : '';
 }

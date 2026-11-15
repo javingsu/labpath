@@ -3,7 +3,7 @@
 // 사용: node collector/collect.mjs            (feed.json 갱신)
 //       node collector/collect.mjs --dry-run  (저장하지 않고 결과만 출력)
 import { readFile, writeFile } from 'node:fs/promises';
-import { parseAlioList, parseAlioDetail, parseSaramin, parseJobkorea, parseEumc, parseSeegeneList, parseSeegeneDetail, makeItem, relevance, dates, OTHER_JOB, snippet, parseYonseiSchedule, parseNsuAdmissions, parseNsuNotice, parseSeoyeongList, makeGradItem, parseGojobsList, parseGojobsDetail, regionOf, parseWork24, parseDeuGuide, parseEuljiMain } from './parsers.mjs';
+import { parseAlioList, parseAlioDetail, parseSaramin, parseJobkorea, parseEumc, parseSeegeneList, parseSeegeneDetail, makeItem, relevance, dates, OTHER_JOB, snippet, parseYonseiSchedule, parseNsuAdmissions, parseNsuNotice, parseSeoyeongList, makeGradItem, parseGojobsList, parseGojobsDetail, regionOf, parseWork24, parseDeuGuide, parseEuljiMain, normLocation, knownPlace } from './parsers.mjs';
 
 const FEED = new URL('../feed.json', import.meta.url);
 const CONFIG = new URL('./config.json', import.meta.url);
@@ -54,7 +54,7 @@ async function yonsei(id, termName) {
   const pick = re => { const k = Object.keys(s.rows).find(x => re.test(x)); return k ? s.rows[k] : ''; };
   return [makeGradItem({
     id: `yonsei-mirae-${s.year}-${s.term === '전기' ? 'spring' : 'fall'}`, sourceId: id,
-    org: '연세대학교 일반대학원 · 미래캠퍼스', title: `${s.year}학년도 ${s.term} 일반전형 모집 · 미래캠퍼스`, region: '강원',
+    org: '연세대학교 일반대학원 · 미래캠퍼스', title: `${s.year}학년도 ${s.term} 일반전형 모집 · 미래캠퍼스`, region: '강원', location: '강원 원주시',
     field: '대학원 진학', condition: '일반대학원', career: '과정별 지원 자격 확인', degree: '석사·박사·통합 과정별 확인', kind: '대학원 모집요강',
     tags: ['미래캠퍼스', '일반전형', s.term, p.end ? '공식 접수 일정' : '접수 일정 원문 확인'].concat(oldGuide ? ['요강은 이전 학년도(참고용)'] : []),
     startDate: p.start, deadline: p.end, deadlineTime: p.endTime,
@@ -79,7 +79,7 @@ const COLLECTORS = {
     for (const r of rows.slice(0, 15)) {
       let d = {}; try { await sleep(600); d = parseGojobsDetail(await get(r.url)); } catch { /* 목록 정보만 사용 */ }
       const kindTag = r.kind === '국가' ? '국가직 공무원' : r.kind === '지자체' ? '지방직·지자체' : r.kind === '공공' ? '공공기관' : '';
-      out.push(makeItem(src, { ...r, region: regionOf(d.workplace) || regionOf(r.org + ' ' + r.title), deadline: d.deadline || r.deadline, startDate: d.startDate,
+      out.push(makeItem(src, { ...r, region: regionOf(d.workplace) || regionOf(r.org + ' ' + r.title), location: normLocation(d.workplace), deadline: d.deadline || r.deadline, startDate: d.startDate,
         condition: /임기제|기간제|대체|한시/.test(r.title) ? '임기제·기간제' : /청년인턴/.test(r.title) ? '인턴' : '공무원·공공 채용', career: /경력/.test(r.title) ? '경력' : '', degree: '공고문 확인',
         relevance: 'strong', official: true, integrated: /,|，/.test(r.title.replace(/\([^)]*임상병리[^)]*\)/, '')),
         qualification: [d.grade && '채용 직급: ' + d.grade, d.workplace && '근무지: ' + d.workplace, '응시 자격(면허·경력 연수)은 공고문 첨부파일에서 확인하세요.'].filter(Boolean).join('\n'),
@@ -93,12 +93,12 @@ const COLLECTORS = {
     const html = await get(URLS.work24, 2, { method: 'POST', body: new URLSearchParams({ keyword: '임상병리', srcKeyword: '임상병리', searchMode: 'Y', resultCnt: '50', pageIndex: '1', sortField: 'DATE', sortOrderBy: 'DESC' }) });
     const PROVIDER = { VALIDATION: '고용24 직접 등록', CIN: '인크루트 제공', CMD: '메디잡 제공' };
     return parseWork24(html).filter(r => !['CSI', 'CJK'].includes(r.type)).map(r => ({ ...r, relevance: relevance(r.title) || (/임상병리/.test(r.title) ? 'strong' : '') })).filter(r => r.relevance)
-      .map(r => makeItem(src, { ...r, region: regionOf(r.address), condition: '', sourceOrg: PROVIDER[r.type] || '', benefit: [r.salary && '급여 ' + r.salary, r.hours, r.address && '근무지 ' + r.address].filter(Boolean).join(' · ') || undefined }));
+      .map(r => makeItem(src, { ...r, region: regionOf(r.address), location: normLocation(r.address), condition: '', sourceOrg: PROVIDER[r.type] || '', benefit: [r.salary && '급여 ' + r.salary, r.hours, r.address && '근무지 ' + r.address].filter(Boolean).join(' · ') || undefined }));
   },
   async eulji() {
     const { today } = dates(); const year = +today.slice(0, 4);
     return parseEuljiMain(await get(URLS.eulji)).filter(r => /(신입생|편입생|입학|입시).*(모집|요강|면접|전형)|모집요강/.test(r.title) && +((r.title.match(/(20\d{2})학년도/) || [])[1] || 0) >= year)
-      .map(r => makeGradItem({ id: 'eulji-' + r.key, sourceId: 'eulji', org: '을지대학교 일반대학원', title: r.title, region: '경기', posted: r.posted,
+      .map(r => makeGradItem({ id: 'eulji-' + r.key, sourceId: 'eulji', org: '을지대학교 일반대학원', title: r.title, region: '경기', location: '경기 의정부시', posted: r.posted,
         field: '임상병리 관련 진학', degree: '석사·박사·석박사통합', kind: /면접|장소/.test(r.title) ? '대학원 입시 안내' : '대학원 모집 안내',
         tags: ['공식 사이트 자동 수집', '임상병리학과 개설', '모집 일정 별도 확인'],
         summary: '을지대학교 일반대학원 공지입니다. 일반대학원에 임상병리학과(석사·박사·석박사통합)가 있어요. 접수 기간과 모집 학과는 공지 첨부 요강과 원서접수 사이트에서 확인하세요.',
@@ -106,7 +106,7 @@ const COLLECTORS = {
   },
   async deu() {
     const g = parseDeuGuide(await get(URLS.deu));
-    return [makeGradItem({ id: 'deu-guide-' + g.title.replace(/\s/g, ''), sourceId: 'deu', org: '동의대학교 대학원', title: g.title, region: '부산',
+    return [makeGradItem({ id: 'deu-guide-' + g.title.replace(/\s/g, ''), sourceId: 'deu', org: '동의대학교 대학원', title: g.title, region: '부산', location: '부산 부산진구',
       field: '임상병리 관련 진학', degree: '석사·박사', kind: '대학원 모집요강', tags: ['공식 사이트 자동 수집', '임상병리학과 개설', '모집 일정 별도 확인'],
       summary: '동의대학교 대학원 모집요강 화면에 게시된 요강입니다. 대학원에 임상병리학과가 있어요. 원서접수·면접 일정과 모집 인원은 요강 PDF에서 확인하세요.',
       source: '동의대학교 대학원 · 모집요강', url: URLS.deu, guideUrl: g.guideUrl, guideLabel: g.guideUrl ? g.title + ' (원본 파일)' : '' })];
@@ -115,7 +115,7 @@ const COLLECTORS = {
     let res; for (let i = 1; ; i++) { try { res = await fetch(URLS.kyungwoon, { method: 'HEAD', headers: { 'User-Agent': UA }, signal: AbortSignal.timeout(20000) }); break; } catch (e) { if (i >= 3) throw e; await sleep(4000); } }
     if (!res.ok) throw new Error(`원문 응답 오류 (${res.status})`);
     const lm = res.headers.get('last-modified'); const updated = lm ? new Date(lm).toISOString().slice(0, 10) : '';
-    return [makeGradItem({ id: 'kyungwoon-guide', sourceId: 'kyungwoon', org: '경운대학교 일반대학원', title: '경운대학교 일반대학원 신입생 모집요강', region: '경북', posted: updated,
+    return [makeGradItem({ id: 'kyungwoon-guide', sourceId: 'kyungwoon', org: '경운대학교 일반대학원', title: '경운대학교 일반대학원 신입생 모집요강', region: '경북', location: '경북 구미시', posted: updated,
       field: '임상병리 관련 진학', degree: '석사', kind: '대학원 모집요강', tags: ['공식 사이트 자동 수집', '임상병리학과 개설', '모집 일정 별도 확인'],
       summary: `경운대 일반대학원 모집학과에 임상병리학과가 포함돼 있어요.${updated ? ' 요강 파일 최종 수정일 ' + updated + '.' : ''} 해당 학기 요강인지와 접수 일정을 PDF에서 확인하세요.`,
       source: '경운대학교 일반대학원 · 모집요강', url: URLS.kyungwoon, guideUrl: URLS.kyungwoon, guideLabel: '모집요강 PDF' })];
@@ -124,7 +124,7 @@ const COLLECTORS = {
   'yonsei-fall': () => yonsei('yonsei-fall', '후기'),
   async 'nsu-admissions'() {
     return parseNsuAdmissions(await get(URLS['nsu-admissions'])).map(b => makeGradItem({
-      id: 'nsu-guide-' + b.title.replace(/\s/g, ''), sourceId: 'nsu-admissions', org: '남서울대학교 대학원', title: b.title, region: '충남',
+      id: 'nsu-guide-' + b.title.replace(/\s/g, ''), sourceId: 'nsu-admissions', org: '남서울대학교 대학원', title: b.title, region: '충남', location: '충남 천안시 서북구',
       field: '임상병리 관련 진학', condition: '학위과정 확인', degree: '모집요강 확인', kind: '대학원 모집요강',
       tags: ['공식 사이트 자동 수집', b.applyOpen ? '원서접수 링크 열림' : '모집학과·접수 일정 확인 필요'],
       summary: '대학원 홈페이지에 게시된 모집요강입니다. ' + (b.applyOpen ? '원서접수 버튼이 열려 있어요. ' : '현재 접수 중임을 뜻하지 않으며 ') + '임상병리학과 모집 여부와 접수 일정은 요강 PDF의 ‘모집일정 및 모집학과’에서 확인하세요.',
@@ -137,7 +137,7 @@ const COLLECTORS = {
     const cutoff = new Date(Date.parse(today) - 150 * 86400000).toISOString().slice(0, 10);
     return parseNsuNotice(await get(URLS.nsu))
       .filter(r => /모집요강|(신입생|신·편입생|신편입생|입학).*(모집|전형)/.test(r.title) && !/논문|장학|교육생|공모|참가|기숙사|IBEC|학생증|연구원|베트남어|외국인/.test(r.title) && r.posted >= cutoff)
-      .map(r => makeGradItem({ id: 'nsu-notice-' + r.key, sourceId: 'nsu', org: '남서울대학교 대학원', title: r.title, region: '충남', posted: r.posted,
+      .map(r => makeGradItem({ id: 'nsu-notice-' + r.key, sourceId: 'nsu', org: '남서울대학교 대학원', title: r.title, region: '충남', location: '충남 천안시 서북구', posted: r.posted,
         field: '임상병리 관련 진학', kind: '대학원 모집 공지', tags: ['공식 사이트 자동 수집', '모집 일정 별도 확인'],
         summary: '남서울대학교 대학원 공지사항에 올라온 모집 관련 글입니다. 공지 목록에서 제목으로 찾아 확인하세요.', source: '남서울대학교 대학원 · 공지사항', url: URLS.nsu }));
   },
@@ -145,7 +145,7 @@ const COLLECTORS = {
     const { today } = dates();
     const year = +today.slice(0, 4);
     return parseSeoyeongList(await get(URLS.seoyeong)).filter(r => +((r.title.match(/(20\d{2})학년도/) || [])[1] || 0) >= year).map(r => makeGradItem({
-      id: 'seoyeong-' + r.key, sourceId: 'seoyeong', org: '서영대학교 대학원', title: r.title, region: '광주', posted: r.posted,
+      id: 'seoyeong-' + r.key, sourceId: 'seoyeong', org: '서영대학교 대학원', title: r.title, region: '광주', location: '광주 북구', posted: r.posted,
       field: '스마트진단검사', condition: '전문기술석사', degree: '전문기술석사', kind: /양식|서식/.test(r.title) ? '입학 서류 안내' : '대학원 모집 안내',
       tags: ['공식 사이트 자동 수집', '모집 일정 별도 확인'], summary: '해당 연도 입학 서류 안내입니다. 접수 기간과 전공별 지원 자격은 모집요강에서 별도로 확인하세요.',
       qualification: '학력·경력·전공별 자격은 해당 연도 공식 모집요강 확인 필요', documents: '입학 서류 양식은 공식 게시글 첨부파일에서 확인',
@@ -184,7 +184,7 @@ const COLLECTORS = {
     const src = { id: 'eumc', label: '이화의료원', prefix: 'eumc-' };
     return parseEumc(await get(URLS.eumc)).filter(r => /임상병리/.test(r.title)).map(r => makeItem(src, {
       ...r, ...periodDates(r.period), official: true, relevance: 'strong', condition: (r.title.match(/정규직|계약직|임시직|기간제/) || [''])[0], career: (r.title.match(/신입|경력/) || [''])[0],
-      org: /목동/.test(r.title) ? '이대목동병원' : /서울병원/.test(r.title) ? '이대서울병원' : '이화의료원', region: '서울'
+      org: /목동/.test(r.title) ? '이대목동병원' : /서울병원/.test(r.title) ? '이대서울병원' : '이화의료원', region: '서울', location: /목동/.test(r.title) ? '서울 양천구' : /서울병원/.test(r.title) ? '서울 강서구' : ''
     }));
   },
   async seegene() {
@@ -195,7 +195,7 @@ const COLLECTORS = {
       await sleep(700);
       let d; try { d = parseSeegeneDetail(await get(r.url)); } catch { continue; }
       if (!d.relevant) continue; // 상세에 임상병리 자격이 있는 공고만
-      out.push(makeItem(src, { ...r, ...periodDates(r.period), org: '씨젠의료재단', region: d.region || '서울', official: true, relevance: 'strong', condition: (r.title.match(/계약직|정규직/) || [''])[0], qualification: d.qualification }));
+      out.push(makeItem(src, { ...r, ...periodDates(r.period), org: '씨젠의료재단', region: d.region || '서울', location: d.location || '서울 동대문구', official: true, relevance: 'strong', condition: (r.title.match(/계약직|정규직/) || [''])[0], qualification: d.qualification }));
     }
     return out;
   }
@@ -254,6 +254,9 @@ async function main() {
   for (const s of feed.sources || []) if (!COLLECTORS[s.id] && s.status !== 'manual') statuses.push({ ...s, status: 'skipped', message: '자동 수집 대상이 아니어서 기존 자료를 유지합니다' });
   for (const s of feed.sources || []) if (s.status === 'manual') statuses.push(s);
 
+  // 근무지 상세가 없는 기존 항목은 기관 소재지 사전으로 채움(대학원은 학교별 위치)
+  const SCHOOL = { '남서울대학교': '충남 천안시 서북구', '서영대학교': '광주 북구', '연세대학교': '강원 원주시', '을지대학교': '경기 의정부시', '동의대학교': '부산 부산진구', '경운대학교': '경북 구미시' };
+  for (const [id, x] of byId) if (!x.location) { const loc = x.type === 'grad' ? (Object.entries(SCHOOL).find(([k]) => String(x.org).includes(k)) || [])[1] : knownPlace(x.org + ' ' + x.title); if (loc) byId.set(id, { ...x, location: loc }); }
   // 오래된 자료 정리: 마감 60일 경과, 또는 마감일 없이 60일 넘게 다시 확인되지 않은 채용 공고
   const { today } = dates(now);
   const cutoff = new Date(Date.parse(today + 'T00:00:00+09:00') - 60 * 86400000).toISOString().slice(0, 10);

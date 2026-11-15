@@ -60,6 +60,11 @@ export function relevance(title, sector = '') {
   return '';
 }
 
+/** 제목에 임상병리 외 특정 직종만 적혀 있는 공고(의사·간호·약사 등) */
+export const OTHER_JOB = /의사|전공의|레지던트|인턴|약사|약무|간호|방사선|물리치료|작업치료|치과|치위생|영양|조리|청소|미화|시설|전기|기계|전산|사무|행정|원무|보안|운전|경비|연구원|개방형|임원|비서|상담|심리|사회복지|응급구조|업무지원|교수|진료|전문의|체외순환/;
+/** 본문에서 임상병리가 나온 부분 앞뒤를 짧게 잘라 보여 줌 */
+export function snippet(t, word = '임상병리', span = 140) { const k = t.indexOf(word); if (k < 0) return ''; return (k > span ? '…' : '') + t.slice(Math.max(0, k - span), k + span).replace(/\s+/g, ' ').trim() + '…'; }
+
 /* ── 잡알리오 ── */
 export function parseAlioList(html) {
   const i = html.indexOf('tbl type_03'); if (i < 0) throw new Error('잡알리오 목록 표를 찾지 못했습니다');
@@ -75,7 +80,8 @@ export function parseAlioDetail(html) {
   const out = {};
   for (const m of html.matchAll(/<th[^>]*>([\s\S]*?)<\/th>\s*<td[^>]*>([\s\S]*?)<\/td>/g)) out[clean(m[1])] = text(m[2]);
   const sec = name => { const m = html.match(new RegExp('<h4>\\s*' + name + '\\s*</h4>\\s*<p>([\\s\\S]*?)</p>')); return m ? text(m[1]) : ''; };
-  return { degree: out['학력정보'] || '', career: out['채용구분'] || '', headcount: out['채용인원'] || '', salary: out['급여정보'] || '', period: out['채용기간'] || '', prefer: sec('우대내용'), qualification: sec('응시자격'), process: sec('전형절차/방법') };
+  const fullText = clean(html.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/g, ''));
+  return { fullText, degree: out['학력정보'] || '', career: out['채용구분'] || '', headcount: out['채용인원'] || '', salary: out['급여정보'] || '', period: out['채용기간'] || '', prefer: sec('우대내용'), qualification: sec('응시자격'), process: sec('전형절차/방법') };
 }
 
 /* ── 사람인 검색 결과 ── */
@@ -147,7 +153,7 @@ export function parseSeegeneDetail(html) {
 export function makeItem(src, o, now = new Date()) {
   const d = dates(now);
   const dl = o.deadline !== undefined ? { deadline: o.deadline, label: o.deadlineLabel } : d.deadline(o.deadlineText || '');
-  const multi = /,|，|\//.test(o.title.replace(/\[[^\]]*\]/g, '')) && /임상병리/.test(o.title) && /간호|원무|방사선|조무|시설|기계|전기|응급|사무/.test(o.title);
+  const multi = o.integrated || /,|，|\//.test(o.title.replace(/\[[^\]]*\]/g, '')) && /임상병리/.test(o.title) && /간호|원무|방사선|조무|시설|기계|전기|응급|사무/.test(o.title);
   const region = clean(o.region).replace(/\s.*$/, '') || '지역 확인';
   const bits = [o.org, region, o.career, o.degree, o.condition, dl.deadline ? '접수 마감 ' + dl.deadline : (dl.label || '접수 마감 원문 확인')].filter(Boolean);
   const item = {
@@ -244,4 +250,62 @@ export function makeGradItem(o, now = new Date()) {
   };
   for (const k of ['startDate', 'deadlineTime', 'guideUrl', 'guideLabel', 'admissionSchedule']) if (o[k]) item[k] = o[k];
   return item;
+}
+
+/* ── 나라일터(인사혁신처): 공고명 검색 결과 ── */
+export function parseGojobsList(html) {
+  const tb = [...html.matchAll(/<tbody[\s\S]*?<\/tbody>/g)].map(m => m[0]).find(t => /fn_apmView/.test(t));
+  if (!tb) { if (/공고명/.test(html)) return []; throw new Error('나라일터 목록을 찾지 못했습니다'); }
+  return tb.split(/<tr[\s>]/).slice(1).map(tr => {
+    const v = tr.match(/fn_apmView\('(\d+)',\s*'(\d+)'\)/); if (!v) return null;
+    const tds = [...tr.matchAll(/<td[^>]*>([\s\S]*?)<\/td>/g)].map(m => clean(m[1]));
+    return { key: v[2], kind: (tr.match(/alt="([^"]+)"/) || [])[1] || '', title: tds[1] || '', org: tds[2] || '', posted: tds[3] || '', deadline: /^\d{4}-\d{2}-\d{2}$/.test(tds[4] || '') ? tds[4] : '', url: `https://www.gojobs.go.kr/apmView.do?empmnsn=${v[2]}&searchJobsecode=${v[1]}&menuNo=401&selMenuNo=400&upperMenuNo=` };
+  }).filter(Boolean);
+}
+export function parseGojobsDetail(html) {
+  const t = clean(html.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/g, ''));
+  const g = re => (t.match(re) || [])[1] || '';
+  return { startDate: g(/접수시작일\s*(\d{4}-\d{2}-\d{2})/), deadline: g(/접수마감일\s*(\d{4}-\d{2}-\d{2})/), grade: g(/채용직급\s*(.+?)\s*근무지역/), workplace: g(/근무지역\s*(.+?)\s*장애인/), fullText: t };
+}
+/** 주소·기관명에서 광역 지역 추출 */
+export function regionOf(s) {
+  s = String(s || '');
+  const pairs = [['서울', '서울'], ['부산', '부산'], ['대구', '대구'], ['인천', '인천'], ['광주', '광주'], ['대전', '대전'], ['울산', '울산'], ['세종', '세종'], ['경기', '경기'], ['강원', '강원'], ['충청북', '충북'], ['충북', '충북'], ['충청남', '충남'], ['충남', '충남'], ['전북', '전북'], ['전라북', '전북'], ['전남', '전남'], ['전라남', '전남'], ['경북', '경북'], ['경상북', '경북'], ['경남', '경남'], ['경상남', '경남'], ['제주', '제주'], ['수원', '경기'], ['성남', '경기'], ['군포', '경기'], ['고양', '경기'], ['용인', '경기'], ['춘천', '강원'], ['원주', '강원'], ['청주', '충북'], ['천안', '충남'], ['전주', '전북'], ['고흥', '전남'], ['순천', '전남'], ['목포', '전남'], ['포항', '경북'], ['창원', '경남'], ['양산', '경남'], ['경인', '경기']];
+  const hit = pairs.map(([w, r]) => [s.indexOf(w), r]).filter(([i]) => i >= 0).sort((a, b) => a[0] - b[0])[0];
+  return hit ? hit[1] : '';
+}
+
+/* ── 고용24 채용정보 검색(공개 화면) ── 고용24 직접 등록·인크루트 등 다른 출처 공고 포함 */
+export function parseWork24(html) {
+  const parts = html.split(/<tr id="list\d+">/).slice(1);
+  if (!parts.length) { if (/검색결과가 없|조회된 데이터가 없/.test(html)) return []; throw new Error('고용24 검색 결과를 찾지 못했습니다'); }
+  return parts.map(p => {
+    p = p.slice(0, p.indexOf('</tr>'));
+    const v = p.match(/id="chkboxWantedAuthNo\d+"\s+value="([^"]+)"/); if (!v) return null;
+    const [key, type, org, ...t] = decode(v[1]).split('|');
+    const href = (p.match(/href="(\/wk\/a\/b\/1500\/empDetailAuthView\.do\?[^"]+)"/) || [])[1];
+    const spans = sel => [...(p.match(new RegExp('<li class="' + sel + '">([\\s\\S]*?)</li>')) || ['', ''])[1].matchAll(/<span class="item[^"]*">([\s\S]*?)<\/span>/g)].map(m => clean(m[1]));
+    const date = (p.match(/var date = '([\d-]+)'/) || [])[1] || '';
+    const wanted = /var wantedYn = 'Y'/.test(p) || /^2099/.test(date);
+    return { key, type, org: clean(org), title: clean(t.join('|')), salary: spans('dollar')[0] || '', career: spans('member')[0] || '', degree: spans('member')[1] || '', hours: spans('time').join(' · '),
+      address: clean((p.match(/<li class="site">([\s\S]*?)<\/li>/) || [])[1]), deadline: wanted ? '' : date, deadlineLabel: wanted ? '채용시' : '',
+      posted: (p.match(/등록일\s*:\s*(\d{4}-\d{2}-\d{2})/) || [])[1] || '', url: href ? 'https://www.work24.go.kr' + decode(href) : '' };
+  }).filter(Boolean);
+}
+
+/* ── 대학원: 동의대학교 모집요강 화면 ── */
+export function parseDeuGuide(html) {
+  const title = clean((html.match(/(20\d{2}학년도\s*(?:전기|후기)[^<]{0,40}모집요강)/) || [])[1]);
+  if (!title) throw new Error('동의대 모집요강 제목을 찾지 못했습니다');
+  const dl = (html.match(/href="(\?mode=download&(?:amp;)?articleNo=\d+&(?:amp;)?attachNo=\d+)"/) || [])[1];
+  return { title, guideUrl: dl ? 'https://grd.deu.ac.kr/grd/sub02_01.do' + decode(dl) : '' };
+}
+/* ── 대학원: 을지대학교 일반대학원 첫 화면의 공지 목록 ── */
+export function parseEuljiMain(html) {
+  const rows = [...html.matchAll(/<a[^>]+href="([^"]*bbsno=(\d+)[^"]*boardno=(1270|852)[^"]*act=view[^"]*)"[^>]*>([\s\S]*?)<\/a>/g)].map(m => ({
+    key: m[3] + '-' + m[2], title: clean((m[4].match(/<span class="text">([\s\S]*?)<\/span>/) || [])[1]),
+    posted: ((m[4].match(/(20\d{2})\.(\d{2})\.(\d{2})/) || []).slice(1).join('-')), url: new URL(decode(m[1]), 'https://grad.eulji.ac.kr/').href
+  })).filter(r => r.title);
+  if (!rows.length) throw new Error('을지대 대학원 공지 목록을 찾지 못했습니다');
+  return [...new Map(rows.map(r => [r.key, r])).values()];
 }

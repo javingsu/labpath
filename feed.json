@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
  "collectorVersion": "labpath-gh-1",
- "revision": "5abc5700-735d-4a76-a6d7-1f8991f5ce33",
+ "revision": "d833a71e-32db-4bc5-8c39-c1f5ac223909",
  "items": [
   {
    "id": "alio306401",
@@ -127,7 +127,7 @@
    "status": "listed",
    "firstSeenAt": "2026-10-28T06:47:37.818Z",
    "changedAt": "2026-10-28T06:47:37.818Z",
-   "lastVerifiedAt": "2026-11-15T02:02:58.476Z"
+   "lastVerifiedAt": "2026-11-15T04:23:13.208Z"
   },
   {
    "id": "nsu-clinical",
@@ -785,7 +785,7 @@
    "status": "listed",
    "firstSeenAt": "2026-10-28T06:47:37.818Z",
    "changedAt": null,
-   "lastVerifiedAt": "2026-11-15T02:02:58.476Z"
+   "lastVerifiedAt": "2026-11-15T04:23:13.208Z"
   },
   {
    "id": "jobkorea-50200968",
@@ -880,7 +880,7 @@
    "startDate": "2026-09-28",
    "firstSeenAt": "2026-10-28T09:07:41.461Z",
    "changedAt": null,
-   "lastVerifiedAt": "2026-11-15T02:03:25.941Z",
+   "lastVerifiedAt": "2026-11-15T04:24:53.803Z",
    "closedReason": null,
    "deadlineTime": "23:00"
   },
@@ -913,7 +913,7 @@
    "startDate": "2026-10-21",
    "firstSeenAt": "2026-10-28T09:07:41.461Z",
    "changedAt": null,
-   "lastVerifiedAt": "2026-11-15T02:03:25.941Z",
+   "lastVerifiedAt": "2026-11-15T04:24:53.803Z",
    "closedReason": null,
    "deadlineTime": "23:00"
   },
@@ -1074,7 +1074,7 @@
    "startDate": "2026-10-22",
    "firstSeenAt": "2026-10-28T09:07:41.461Z",
    "changedAt": null,
-   "lastVerifiedAt": "2026-11-15T02:03:25.941Z",
+   "lastVerifiedAt": "2026-11-15T04:24:53.804Z",
    "closedReason": null,
    "deadlineTime": "23:00"
   },
@@ -1532,7 +1532,7 @@
    },
    "firstSeenAt": "2026-10-28T09:31:29.971Z",
    "changedAt": null,
-   "lastVerifiedAt": "2026-11-15T02:02:52.730Z"
+   "lastVerifiedAt": "2026-11-15T04:23:05.965Z"
   },
   {
    "id": "yonsei-mirae-2026-fall",
@@ -1763,7 +1763,7 @@
    "startDate": "2026-10-29",
    "firstSeenAt": "2026-10-30T00:01:40.457Z",
    "changedAt": null,
-   "lastVerifiedAt": "2026-11-15T02:03:25.941Z",
+   "lastVerifiedAt": "2026-11-15T04:24:53.804Z",
    "closedReason": null,
    "deadlineTime": "23:00"
   },
@@ -1858,7 +1858,7 @@
    "startDate": "2026-10-30",
    "firstSeenAt": "2026-10-31T00:00:37.203Z",
    "changedAt": null,
-   "lastVerifiedAt": "2026-11-15T02:03:22.089Z",
+   "lastVerifiedAt": "2026-11-15T04:23:47.818Z",
    "closedReason": null
   },
   {
@@ -2498,7 +2498,7 @@
    "closedReason": null,
    "firstSeenAt": "2026-11-04T00:05:27.834Z",
    "changedAt": null,
-   "lastVerifiedAt": "2026-11-15T02:03:20.395Z"
+   "lastVerifiedAt": "2026-11-15T04:23:45.304Z"
   },
   {
    "id": "jobkorea-50279842",
@@ -2530,7 +2530,7 @@
    "closedReason": null,
    "firstSeenAt": "2026-11-04T00:05:27.834Z",
    "changedAt": null,
-   "lastVerifiedAt": "2026-11-15T02:03:25.941Z",
+   "lastVerifiedAt": "2026-11-15T04:24:53.803Z",
    "deadlineTime": "23:00"
   },
   {
@@ -2595,7 +2595,7 @@
    "closedReason": null,
    "firstSeenAt": "2026-11-04T23:59:36.944Z",
    "changedAt": null,
-   "lastVerifiedAt": "2026-11-15T02:03:16.410Z"
+   "lastVerifiedAt": "2026-11-15T04:23:41.376Z"
   },
   {
    "id": "alio306694",
@@ -2659,7 +2659,7 @@
    "closedReason": null,
    "firstSeenAt": "2026-11-04T23:59:36.944Z",
    "changedAt": null,
-   "lastVerifiedAt": "2026-11-15T02:03:18.527Z"
+   "lastVerifiedAt": "2026-11-15T04:23:43.143Z"
   },
   {
    "id": "saramin-55480851",
@@ -3139,7 +3139,7 @@
    "closedReason": null,
    "firstSeenAt": "2026-11-10T00:03:15.317Z",
    "changedAt": null,
-   "lastVerifiedAt": "2026-11-15T02:03:12.548Z"
+   "lastVerifiedAt": "2026-11-15T04:23:36.581Z"
   },
   {
    "id": "alio306862",
@@ -3171,7 +3171,7 @@
    "closedReason": null,
    "firstSeenAt": "2026-11-10T00:03:15.317Z",
    "changedAt": null,
-   "lastVerifiedAt": "2026-11-15T02:03:14.431Z"
+   "lastVerifiedAt": "2026-11-15T04:23:39.022Z"
   },
   {
    "id": "jobkorea-50245981",
@@ -3363,7 +3363,7 @@
    "closedReason": null,
    "firstSeenAt": "2026-11-10T23:59:06.636Z",
    "changedAt": null,
-   "lastVerifiedAt": "2026-11-15T02:03:10.487Z"
+   "lastVerifiedAt": "2026-11-15T04:23:34.094Z"
   },
   {
    "id": "jobkorea-50327218",
@@ -3555,7 +3555,7 @@
    "closedReason": null,
    "firstSeenAt": "2026-11-11T23:58:11.327Z",
    "changedAt": null,
-   "lastVerifiedAt": "2026-11-15T02:03:08.568Z"
+   "lastVerifiedAt": "2026-11-15T04:23:31.003Z"
   },
   {
    "id": "nsu-guide-2027학년도전기1차대학원모집요강",
@@ -3585,7 +3585,7 @@
    "status": "listed",
    "firstSeenAt": "2026-11-11T23:58:11.327Z",
    "changedAt": null,
-   "lastVerifiedAt": "2026-11-15T02:02:55.211Z",
+   "lastVerifiedAt": "2026-11-15T04:23:08.921Z",
    "guideUrl": "https://gr.nsu.ac.kr/attach/c49f41bf61115b0204a2cf9164ca6398/9a9db098b587ee18b321c826f3707a49",
    "guideLabel": "2027학년도 전기 1차 대학원 모집요강 (PDF)"
   },
@@ -3619,7 +3619,7 @@
    "closedReason": null,
    "firstSeenAt": "2026-11-11T23:58:11.327Z",
    "changedAt": null,
-   "lastVerifiedAt": "2026-11-15T02:03:25.941Z",
+   "lastVerifiedAt": "2026-11-15T04:24:53.803Z",
    "deadlineTime": "23:00"
   },
   {
@@ -3911,7 +3911,7 @@
    "closedReason": null,
    "firstSeenAt": "2026-11-12T01:14:33.124Z",
    "changedAt": null,
-   "lastVerifiedAt": "2026-11-15T02:03:27.381Z"
+   "lastVerifiedAt": "2026-11-15T04:24:55.135Z"
   },
   {
    "id": "eumc-31719",
@@ -3946,7 +3946,7 @@
    "closedReason": null,
    "firstSeenAt": "2026-11-12T01:14:33.124Z",
    "changedAt": null,
-   "lastVerifiedAt": "2026-11-15T02:03:27.381Z"
+   "lastVerifiedAt": "2026-11-15T04:24:55.135Z"
   },
   {
    "id": "seegene-376",
@@ -3979,7 +3979,7 @@
    "closedReason": null,
    "firstSeenAt": "2026-11-12T01:14:33.124Z",
    "changedAt": null,
-   "lastVerifiedAt": "2026-11-15T02:03:29.177Z"
+   "lastVerifiedAt": "2026-11-15T04:24:58.843Z"
   },
   {
    "id": "seegene-375",
@@ -4012,7 +4012,7 @@
    "closedReason": null,
    "firstSeenAt": "2026-11-12T01:14:33.124Z",
    "changedAt": null,
-   "lastVerifiedAt": "2026-11-15T02:03:30.427Z"
+   "lastVerifiedAt": "2026-11-15T04:24:59.804Z"
   },
   {
    "id": "seegene-373",
@@ -4143,7 +4143,7 @@
    "closedReason": null,
    "firstSeenAt": "2026-11-14T00:03:52.096Z",
    "changedAt": null,
-   "lastVerifiedAt": "2026-11-15T02:03:03.207Z"
+   "lastVerifiedAt": "2026-11-15T04:23:24.587Z"
   },
   {
    "id": "alio307020",
@@ -4175,7 +4175,7 @@
    "closedReason": null,
    "firstSeenAt": "2026-11-14T00:03:52.096Z",
    "changedAt": null,
-   "lastVerifiedAt": "2026-11-15T02:03:04.897Z"
+   "lastVerifiedAt": "2026-11-15T04:23:27.035Z"
   },
   {
    "id": "alio306977",
@@ -4207,7 +4207,7 @@
    "closedReason": null,
    "firstSeenAt": "2026-11-14T00:03:52.096Z",
    "changedAt": null,
-   "lastVerifiedAt": "2026-11-15T02:03:06.850Z"
+   "lastVerifiedAt": "2026-11-15T04:23:29.108Z"
   },
   {
    "id": "jobkorea-50344684",
@@ -4239,7 +4239,7 @@
    "closedReason": null,
    "firstSeenAt": "2026-11-14T00:03:52.096Z",
    "changedAt": null,
-   "lastVerifiedAt": "2026-11-15T02:03:25.941Z",
+   "lastVerifiedAt": "2026-11-15T04:24:53.804Z",
    "deadlineTime": "18:00"
   },
   {
@@ -4272,7 +4272,7 @@
    "closedReason": null,
    "firstSeenAt": "2026-11-14T00:03:52.096Z",
    "changedAt": null,
-   "lastVerifiedAt": "2026-11-15T02:03:25.941Z",
+   "lastVerifiedAt": "2026-11-15T04:24:53.804Z",
    "deadlineTime": "23:00"
   },
   {
@@ -4337,7 +4337,7 @@
    "closedReason": null,
    "firstSeenAt": "2026-11-14T00:03:52.096Z",
    "changedAt": null,
-   "lastVerifiedAt": "2026-11-15T02:03:24.656Z"
+   "lastVerifiedAt": "2026-11-15T04:24:52.503Z"
   },
   {
    "id": "saramin-55547216",
@@ -4398,7 +4398,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.655Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.503Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -4427,7 +4427,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.655Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.503Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -4456,7 +4456,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.655Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.503Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -4486,7 +4486,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.655Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.503Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -4516,7 +4516,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.655Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.503Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -4545,7 +4545,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.655Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.503Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -4575,7 +4575,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.655Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.503Z",
    "deadlineLabel": "채용시",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
@@ -4605,7 +4605,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.655Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.503Z",
    "deadlineLabel": "채용시",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
@@ -4635,7 +4635,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.655Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.503Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -4664,7 +4664,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.655Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.503Z",
    "deadlineLabel": "채용시",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
@@ -4694,7 +4694,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.655Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.503Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -4724,7 +4724,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.655Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.503Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -4753,7 +4753,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.655Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.503Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -4782,7 +4782,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.655Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.503Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -4812,7 +4812,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.656Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.503Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -4842,7 +4842,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.656Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.503Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -4871,7 +4871,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.656Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.503Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -4900,7 +4900,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.656Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.503Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -4929,7 +4929,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.656Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.504Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -4958,7 +4958,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.656Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.504Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -4988,7 +4988,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.656Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.504Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5017,7 +5017,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.656Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.504Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5046,7 +5046,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.656Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.504Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5075,7 +5075,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.656Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.504Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5104,7 +5104,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.656Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.504Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5134,7 +5134,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.656Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.504Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5163,7 +5163,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.656Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.504Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5192,7 +5192,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.656Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.504Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5221,7 +5221,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.656Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.504Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5250,7 +5250,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.656Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.505Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5279,7 +5279,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.656Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.505Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5308,7 +5308,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.656Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.505Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5337,7 +5337,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.656Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.505Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5366,7 +5366,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.656Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.505Z",
    "deadlineLabel": "채용시",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
@@ -5396,7 +5396,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.656Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.505Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5426,7 +5426,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.656Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.505Z",
    "deadlineLabel": "상시채용",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
@@ -5456,7 +5456,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.656Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.505Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5486,7 +5486,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.656Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.505Z",
    "deadlineLabel": "상시채용",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
@@ -5516,7 +5516,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.656Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.505Z",
    "deadlineLabel": "채용시",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
@@ -5547,7 +5547,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.656Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.505Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5576,7 +5576,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.656Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.505Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5605,7 +5605,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.656Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.505Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5634,7 +5634,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.656Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.505Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5663,7 +5663,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.656Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.505Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5692,7 +5692,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.656Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.505Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5721,7 +5721,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.656Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.505Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5751,7 +5751,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.656Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.505Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5781,7 +5781,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.656Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.505Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5810,7 +5810,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.656Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.505Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5839,7 +5839,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.656Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.505Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5868,7 +5868,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.656Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.505Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5897,7 +5897,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.656Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.505Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5927,7 +5927,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.656Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.505Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -5957,7 +5957,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.656Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.505Z",
    "deadlineLabel": "채용시",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
@@ -5987,7 +5987,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.656Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.505Z",
    "firstSeenAt": "2026-11-14T14:23:16.599Z"
   },
   {
@@ -6134,7 +6134,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.655Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.503Z",
    "firstSeenAt": "2026-11-14T23:54:46.445Z"
   },
   {
@@ -6163,7 +6163,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.655Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.503Z",
    "firstSeenAt": "2026-11-14T23:54:46.445Z"
   },
   {
@@ -6192,7 +6192,7 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.656Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.504Z",
    "firstSeenAt": "2026-11-14T23:54:46.445Z"
   },
   {
@@ -6222,7 +6222,7 @@
    "checked": "2026-11-15",
    "sourceId": "jobkorea",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:25.941Z",
+   "lastVerifiedAt": "2026-11-15T04:24:53.803Z",
    "deadlineTime": "10:00",
    "firstSeenAt": "2026-11-14T23:54:46.445Z"
   },
@@ -6253,7 +6253,7 @@
    "checked": "2026-11-15",
    "sourceId": "jobkorea",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:25.941Z",
+   "lastVerifiedAt": "2026-11-15T04:24:53.803Z",
    "deadlineTime": "23:00",
    "firstSeenAt": "2026-11-14T23:54:46.445Z"
   },
@@ -6286,7 +6286,7 @@
    "checked": "2026-11-15",
    "sourceId": "yonsei-fall",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:02:53.595Z",
+   "lastVerifiedAt": "2026-11-15T04:23:06.890Z",
    "startDate": "2027-04-06",
    "deadlineTime": "17:00",
    "guideUrl": "https://graduate.yonsei.ac.kr/_res/graduate/etc/guide_m_2026-1.pdf",
@@ -6325,21 +6325,977 @@
    "checked": "2026-11-15",
    "sourceId": "saramin",
    "status": "listed",
-   "lastVerifiedAt": "2026-11-15T02:03:24.655Z",
+   "lastVerifiedAt": "2026-11-15T04:24:52.503Z",
    "firstSeenAt": "2026-11-15T02:00:19.829Z"
+  },
+  {
+   "id": "gojobs-307730",
+   "type": "job",
+   "org": "병무청 경인지방병무청",
+   "title": "경인지방병무청 한시임기제8호(임상병리사) 경력경쟁채용시험 공고",
+   "region": "지역 확인",
+   "field": "임상병리",
+   "condition": "임기제·기간제",
+   "career": "경력",
+   "degree": "공고문 확인",
+   "deadline": "2026-11-16",
+   "posted": "2026-11-06",
+   "kind": "채용 공고",
+   "tags": [
+    "나라일터",
+    "자동 수집",
+    "기관 공식 채용"
+   ],
+   "summary": "병무청 경인지방병무청 · 지역 확인 · 경력 · 공고문 확인 · 임기제·기간제 · 접수 마감 2026-11-16",
+   "qualification": "채용 직급: ,\n근무지: ,\n응시 자격(면허·경력 연수)은 공고문 첨부파일에서 확인하세요.",
+   "benefit": "급여·근무시간은 원문 확인 필요",
+   "documents": "제출 서류와 양식은 원문에서 확인",
+   "source": "나라일터 · 국가직 공무원",
+   "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=307730&searchJobsecode=020&menuNo=401&selMenuNo=400&upperMenuNo=",
+   "checked": "2026-11-15",
+   "sourceId": "gojobs",
+   "status": "listed",
+   "lastVerifiedAt": "2026-11-15T04:22:40.990Z",
+   "startDate": "2026-11-13",
+   "firstSeenAt": "2026-11-15T04:22:32.729Z"
+  },
+  {
+   "id": "work24-2611130002165",
+   "type": "job",
+   "org": "가톨릭대학교 은평성모병원",
+   "title": "[은평성모]기능검사팀 임상병리직(휴직대체 계약직) 모집(청력검사실)",
+   "region": "서울",
+   "field": "생리기능검사",
+   "condition": "고용형태 원문 확인",
+   "career": "신입/경력",
+   "degree": "대졸(2~3년)",
+   "deadline": "",
+   "posted": "2026-11-13",
+   "kind": "채용 공고",
+   "tags": [
+    "고용24",
+    "자동 수집",
+    "회사내규에 따름"
+   ],
+   "summary": "가톨릭대학교 은평성모병원 · 서울 · 신입/경력 · 대졸(2~3년) · 접수 마감 원문 확인",
+   "qualification": "임상병리사 면허 등 세부 지원 자격은 원문에서 확인하세요.",
+   "benefit": "급여 회사내규에 따름 · 주5일 · 근무지 서울 은평구",
+   "documents": "제출 서류와 양식은 원문에서 확인",
+   "source": "고용24 · 인크루트 제공",
+   "url": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=2611130002165&infoTypeCd=CIN&infoTypeGroup=tb_workinfogubun",
+   "checked": "2026-11-15",
+   "sourceId": "work24",
+   "status": "listed",
+   "lastVerifiedAt": "2026-11-15T04:22:43.709Z",
+   "firstSeenAt": "2026-11-15T04:22:32.729Z"
+  },
+  {
+   "id": "work24-K163022611090006",
+   "type": "job",
+   "org": "조재익신경외과의원",
+   "title": "임상병리사 구인합니다.",
+   "region": "제주",
+   "field": "임상병리",
+   "condition": "고용형태 원문 확인",
+   "career": "경력무관",
+   "degree": "학력무관",
+   "deadline": "",
+   "posted": "2026-11-09",
+   "kind": "채용 공고",
+   "tags": [
+    "고용24",
+    "자동 수집",
+    "월급 220 만원 ~ 320 만원"
+   ],
+   "summary": "조재익신경외과의원 · 제주 · 경력무관 · 학력무관 · 채용시",
+   "qualification": "임상병리사 면허 등 세부 지원 자격은 원문에서 확인하세요.",
+   "benefit": "급여 월급 220 만원 ~ 320 만원 · 주6일 · 주 40시간 근로 · 근무지 제주특별자치도 서귀포시 대정읍",
+   "documents": "제출 서류와 양식은 원문에서 확인",
+   "source": "고용24 · 고용24 직접 등록",
+   "url": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K163022611090006&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
+   "checked": "2026-11-15",
+   "sourceId": "work24",
+   "status": "listed",
+   "lastVerifiedAt": "2026-11-15T04:22:43.709Z",
+   "deadlineLabel": "채용시",
+   "firstSeenAt": "2026-11-15T04:22:32.729Z"
+  },
+  {
+   "id": "work24-K160012611090012",
+   "type": "job",
+   "org": "미래로21병원",
+   "title": "진단검사의학과 임상병리사 모집",
+   "region": "전남",
+   "field": "임상병리",
+   "condition": "고용형태 원문 확인",
+   "career": "경력무관",
+   "degree": "학력무관",
+   "deadline": "",
+   "posted": "2026-11-09",
+   "kind": "채용 공고",
+   "tags": [
+    "고용24",
+    "자동 수집",
+    "월급 230 만원 이상"
+   ],
+   "summary": "미래로21병원 · 전남 · 경력무관 · 학력무관 · 채용시",
+   "qualification": "임상병리사 면허 등 세부 지원 자격은 원문에서 확인하세요.",
+   "benefit": "급여 월급 230 만원 이상 · 주6일 · 주 40시간 근로 · 근무지 전남광주통합특별시 서구 화운로",
+   "documents": "제출 서류와 양식은 원문에서 확인",
+   "source": "고용24 · 고용24 직접 등록",
+   "url": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K160012611090012&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
+   "checked": "2026-11-15",
+   "sourceId": "work24",
+   "status": "listed",
+   "lastVerifiedAt": "2026-11-15T04:22:43.709Z",
+   "deadlineLabel": "채용시",
+   "firstSeenAt": "2026-11-15T04:22:32.729Z"
+  },
+  {
+   "id": "work24-K162212611090013",
+   "type": "job",
+   "org": "순정병원",
+   "title": "◆순정병원◆ 진단검사실 임상병리사 구인",
+   "region": "전남",
+   "field": "임상병리",
+   "condition": "고용형태 원문 확인",
+   "career": "경력3년",
+   "degree": "학력무관",
+   "deadline": "",
+   "posted": "2026-11-09",
+   "kind": "채용 공고",
+   "tags": [
+    "고용24",
+    "자동 수집",
+    "연봉 2,890 만원 이상"
+   ],
+   "summary": "순정병원 · 전남 · 경력3년 · 학력무관 · 채용시",
+   "qualification": "임상병리사 면허 등 세부 지원 자격은 원문에서 확인하세요.",
+   "benefit": "급여 연봉 2,890 만원 이상 · 주5일 · 주 40시간 근로 · 08:30 ~ 17:30 · 근무지 전남광주통합특별시 순천시 해룡면",
+   "documents": "제출 서류와 양식은 원문에서 확인",
+   "source": "고용24 · 고용24 직접 등록",
+   "url": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K162212611090013&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
+   "checked": "2026-11-15",
+   "sourceId": "work24",
+   "status": "listed",
+   "lastVerifiedAt": "2026-11-15T04:22:43.709Z",
+   "deadlineLabel": "채용시",
+   "firstSeenAt": "2026-11-15T04:22:32.729Z"
+  },
+  {
+   "id": "work24-K162212611040015",
+   "type": "job",
+   "org": "숨이편한 내과",
+   "title": "임상병리사 채용 공고",
+   "region": "전남",
+   "field": "임상병리",
+   "condition": "고용형태 원문 확인",
+   "career": "경력1년",
+   "degree": "대졸(2~3년)",
+   "deadline": "",
+   "posted": "2026-11-04",
+   "kind": "채용 공고",
+   "tags": [
+    "고용24",
+    "자동 수집",
+    "월급 245 만원 ~ 245 만원"
+   ],
+   "summary": "숨이편한 내과 · 전남 · 경력1년 · 대졸(2~3년) · 접수 마감 원문 확인",
+   "qualification": "임상병리사 면허 등 세부 지원 자격은 원문에서 확인하세요.",
+   "benefit": "급여 월급 245 만원 ~ 245 만원 · 주6일 · 주 37시간 근로 · 근무지 전남광주통합특별시 순천시 해룡면",
+   "documents": "제출 서류와 양식은 원문에서 확인",
+   "source": "고용24 · 고용24 직접 등록",
+   "url": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K162212611040015&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
+   "checked": "2026-11-15",
+   "sourceId": "work24",
+   "status": "listed",
+   "lastVerifiedAt": "2026-11-15T04:22:43.709Z",
+   "firstSeenAt": "2026-11-15T04:22:32.729Z"
+  },
+  {
+   "id": "work24-KF10292611020003",
+   "type": "job",
+   "org": "동해이레요양병원",
+   "title": "임상병리사 채용",
+   "region": "강원",
+   "field": "임상병리",
+   "condition": "고용형태 원문 확인",
+   "career": "경력무관",
+   "degree": "대졸(2~3년) ~ 대졸(4년)",
+   "deadline": "",
+   "posted": "2026-11-02",
+   "kind": "채용 공고",
+   "tags": [
+    "고용24",
+    "자동 수집",
+    "월급 235 만원 ~ 235 만원"
+   ],
+   "summary": "동해이레요양병원 · 강원 · 경력무관 · 대졸(2~3년) ~ 대졸(4년) · 접수 마감 원문 확인",
+   "qualification": "임상병리사 면허 등 세부 지원 자격은 원문에서 확인하세요.",
+   "benefit": "급여 월급 235 만원 ~ 235 만원 · 주5일 · 주 40시간 근로 · 근무지 강원도 동해시 덕골길",
+   "documents": "제출 서류와 양식은 원문에서 확인",
+   "source": "고용24 · 고용24 직접 등록",
+   "url": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=KF10292611020003&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
+   "checked": "2026-11-15",
+   "sourceId": "work24",
+   "status": "listed",
+   "lastVerifiedAt": "2026-11-15T04:22:43.709Z",
+   "firstSeenAt": "2026-11-15T04:22:32.729Z"
+  },
+  {
+   "id": "work24-K162212611020025",
+   "type": "job",
+   "org": "의료법인 청울의료재단",
+   "title": "요양병원 임상병리사 구인",
+   "region": "전남",
+   "field": "임상병리",
+   "condition": "고용형태 원문 확인",
+   "career": "경력무관",
+   "degree": "학력무관",
+   "deadline": "",
+   "posted": "2026-11-02",
+   "kind": "채용 공고",
+   "tags": [
+    "고용24",
+    "자동 수집",
+    "월급 230 만원 이상"
+   ],
+   "summary": "의료법인 청울의료재단 · 전남 · 경력무관 · 학력무관 · 채용시",
+   "qualification": "임상병리사 면허 등 세부 지원 자격은 원문에서 확인하세요.",
+   "benefit": "급여 월급 230 만원 이상 · 주5일 · 주 40시간 근로 · 08:30 ~ 17:30 · 근무지 전남광주통합특별시 순천시 상사면",
+   "documents": "제출 서류와 양식은 원문에서 확인",
+   "source": "고용24 · 고용24 직접 등록",
+   "url": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K162212611020025&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
+   "checked": "2026-11-15",
+   "sourceId": "work24",
+   "status": "listed",
+   "lastVerifiedAt": "2026-11-15T04:22:43.709Z",
+   "deadlineLabel": "채용시",
+   "firstSeenAt": "2026-11-15T04:22:32.729Z"
+  },
+  {
+   "id": "work24-2610300000965",
+   "type": "job",
+   "org": "광교신경과의원",
+   "title": "광교신경과의원 임상병리사 채용",
+   "region": "경기",
+   "field": "임상병리",
+   "condition": "고용형태 원문 확인",
+   "career": "신입/경력",
+   "degree": "대졸(2~3년)",
+   "deadline": "",
+   "posted": "2026-10-30",
+   "kind": "채용 공고",
+   "tags": [
+    "고용24",
+    "자동 수집",
+    "연봉 2,900 만원 ~ 2,900 만원"
+   ],
+   "summary": "광교신경과의원 · 경기 · 신입/경력 · 대졸(2~3년) · 접수 마감 원문 확인",
+   "qualification": "임상병리사 면허 등 세부 지원 자격은 원문에서 확인하세요.",
+   "benefit": "급여 연봉 2,900 만원 ~ 2,900 만원 · 근무지 경기 용인시 수지구 등",
+   "documents": "제출 서류와 양식은 원문에서 확인",
+   "source": "고용24 · 인크루트 제공",
+   "url": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=2610300000965&infoTypeCd=CIN&infoTypeGroup=tb_workinfogubun",
+   "checked": "2026-11-15",
+   "sourceId": "work24",
+   "status": "listed",
+   "lastVerifiedAt": "2026-11-15T04:22:43.709Z",
+   "firstSeenAt": "2026-11-15T04:22:32.729Z"
+  },
+  {
+   "id": "work24-K131412610290015",
+   "type": "job",
+   "org": "한일병원",
+   "title": "건강증진센터/종검,일검 (임상병리사구인)",
+   "region": "경남",
+   "field": "임상병리",
+   "condition": "고용형태 원문 확인",
+   "career": "경력무관",
+   "degree": "학력무관",
+   "deadline": "",
+   "posted": "2026-10-29",
+   "kind": "채용 공고",
+   "tags": [
+    "고용24",
+    "자동 수집",
+    "월급 215 만원 이상"
+   ],
+   "summary": "한일병원 · 경남 · 경력무관 · 학력무관 · 채용시",
+   "qualification": "임상병리사 면허 등 세부 지원 자격은 원문에서 확인하세요.",
+   "benefit": "급여 월급 215 만원 이상 · 주6일 · 주 40시간 근로 · 근무지 경상남도 진주시 범골로",
+   "documents": "제출 서류와 양식은 원문에서 확인",
+   "source": "고용24 · 고용24 직접 등록",
+   "url": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K131412610290015&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
+   "checked": "2026-11-15",
+   "sourceId": "work24",
+   "status": "listed",
+   "lastVerifiedAt": "2026-11-15T04:22:43.710Z",
+   "deadlineLabel": "채용시",
+   "firstSeenAt": "2026-11-15T04:22:32.729Z"
+  },
+  {
+   "id": "work24-K162212610230013",
+   "type": "job",
+   "org": "의료법인 영성의료재단",
+   "title": "임상병리사 모집 공고",
+   "region": "전남",
+   "field": "임상병리",
+   "condition": "고용형태 원문 확인",
+   "career": "경력무관",
+   "degree": "학력무관",
+   "deadline": "",
+   "posted": "2026-10-23",
+   "kind": "채용 공고",
+   "tags": [
+    "고용24",
+    "자동 수집",
+    "월급 240 만원 이상"
+   ],
+   "summary": "의료법인 영성의료재단 · 전남 · 경력무관 · 학력무관 · 채용시",
+   "qualification": "임상병리사 면허 등 세부 지원 자격은 원문에서 확인하세요.",
+   "benefit": "급여 월급 240 만원 이상 · 주5일 · 주 40시간 근로 · 근무지 전남광주통합특별시 고흥군 고흥읍",
+   "documents": "제출 서류와 양식은 원문에서 확인",
+   "source": "고용24 · 고용24 직접 등록",
+   "url": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K162212610230013&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
+   "checked": "2026-11-15",
+   "sourceId": "work24",
+   "status": "listed",
+   "lastVerifiedAt": "2026-11-15T04:22:43.710Z",
+   "deadlineLabel": "채용시",
+   "firstSeenAt": "2026-11-15T04:22:32.729Z"
+  },
+  {
+   "id": "work24-K130112610200052",
+   "type": "job",
+   "org": "세인요양병원",
+   "title": "세인요양병원 임상병리사(육아휴직 대체)계약직 구인",
+   "region": "부산",
+   "field": "임상병리",
+   "condition": "고용형태 원문 확인",
+   "career": "경력1년",
+   "degree": "학력무관",
+   "deadline": "",
+   "posted": "2026-10-20",
+   "kind": "채용 공고",
+   "tags": [
+    "고용24",
+    "자동 수집",
+    "월급 230 만원 ~ 240 만원"
+   ],
+   "summary": "세인요양병원 · 부산 · 경력1년 · 학력무관 · 접수 마감 원문 확인",
+   "qualification": "임상병리사 면허 등 세부 지원 자격은 원문에서 확인하세요.",
+   "benefit": "급여 월급 230 만원 ~ 240 만원 · 주5일 · 주 40시간 근로 · 09:00 ~ 17:30 · 근무지 부산광역시 동래구 여고로",
+   "documents": "제출 서류와 양식은 원문에서 확인",
+   "source": "고용24 · 고용24 직접 등록",
+   "url": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K130112610200052&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
+   "checked": "2026-11-15",
+   "sourceId": "work24",
+   "status": "listed",
+   "lastVerifiedAt": "2026-11-15T04:22:43.710Z",
+   "firstSeenAt": "2026-11-15T04:22:32.729Z"
+  },
+  {
+   "id": "work24-2610200001207",
+   "type": "job",
+   "org": "의료법인 나래의료재단 나래의원",
+   "title": "확장으로 인한 임상병리사 추가 구인공고",
+   "region": "경기",
+   "field": "임상병리",
+   "condition": "고용형태 원문 확인",
+   "career": "경력2년",
+   "degree": "학력무관",
+   "deadline": "",
+   "posted": "2026-10-20",
+   "kind": "채용 공고",
+   "tags": [
+    "고용24",
+    "자동 수집",
+    "연봉 3,000 만원 ~ 3,500 만원"
+   ],
+   "summary": "의료법인 나래의료재단 나래의원 · 경기 · 경력2년 · 학력무관 · 접수 마감 원문 확인",
+   "qualification": "임상병리사 면허 등 세부 지원 자격은 원문에서 확인하세요.",
+   "benefit": "급여 연봉 3,000 만원 ~ 3,500 만원 · 주6일 · 근무지 경기 안양시 동안구 등",
+   "documents": "제출 서류와 양식은 원문에서 확인",
+   "source": "고용24 · 인크루트 제공",
+   "url": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=2610200001207&infoTypeCd=CIN&infoTypeGroup=tb_workinfogubun",
+   "checked": "2026-11-15",
+   "sourceId": "work24",
+   "status": "listed",
+   "lastVerifiedAt": "2026-11-15T04:22:43.710Z",
+   "firstSeenAt": "2026-11-15T04:22:32.729Z"
+  },
+  {
+   "id": "work24-K162212610190026",
+   "type": "job",
+   "org": "플러스 아이미코 병원",
+   "title": "플러스아이미코 임상병리사 대체근무자 채용",
+   "region": "전남",
+   "field": "임상병리",
+   "condition": "고용형태 원문 확인",
+   "career": "경력무관",
+   "degree": "학력무관",
+   "deadline": "",
+   "posted": "2026-10-19",
+   "kind": "채용 공고",
+   "tags": [
+    "고용24",
+    "자동 수집",
+    "시급 10,320 원 이상"
+   ],
+   "summary": "플러스 아이미코 병원 · 전남 · 경력무관 · 학력무관 · 채용시",
+   "qualification": "임상병리사 면허 등 세부 지원 자격은 원문에서 확인하세요.",
+   "benefit": "급여 시급 10,320 원 이상 · 주5일 · 근무지 전남광주통합특별시 순천시 신월큰길",
+   "documents": "제출 서류와 양식은 원문에서 확인",
+   "source": "고용24 · 고용24 직접 등록",
+   "url": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K162212610190026&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
+   "checked": "2026-11-15",
+   "sourceId": "work24",
+   "status": "listed",
+   "lastVerifiedAt": "2026-11-15T04:22:43.710Z",
+   "deadlineLabel": "채용시",
+   "firstSeenAt": "2026-11-15T04:22:32.729Z"
+  },
+  {
+   "id": "work24-KF10162610190004",
+   "type": "job",
+   "org": "모아산부인과병원，산후조리원",
+   "title": "모아산부인과에서 임상병리사를 모집 합니다.",
+   "region": "전남",
+   "field": "임상병리",
+   "condition": "고용형태 원문 확인",
+   "career": "경력무관",
+   "degree": "학력무관",
+   "deadline": "",
+   "posted": "2026-10-19",
+   "kind": "채용 공고",
+   "tags": [
+    "고용24",
+    "자동 수집",
+    "월급 255 만원 ~ 255 만원"
+   ],
+   "summary": "모아산부인과병원，산후조리원 · 전남 · 경력무관 · 학력무관 · 채용시",
+   "qualification": "임상병리사 면허 등 세부 지원 자격은 원문에서 확인하세요.",
+   "benefit": "급여 월급 255 만원 ~ 255 만원 · 주5일 · 주 40시간 근로 · 근무지 전남광주통합특별시 남구 백양로",
+   "documents": "제출 서류와 양식은 원문에서 확인",
+   "source": "고용24 · 고용24 직접 등록",
+   "url": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=KF10162610190004&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
+   "checked": "2026-11-15",
+   "sourceId": "work24",
+   "status": "listed",
+   "lastVerifiedAt": "2026-11-15T04:22:43.710Z",
+   "deadlineLabel": "채용시",
+   "firstSeenAt": "2026-11-15T04:22:32.729Z"
+  },
+  {
+   "id": "work24-K120312610150024",
+   "type": "job",
+   "org": "연세큰숲내과",
+   "title": "연세큰숲내과 임상병리사 모집",
+   "region": "서울",
+   "field": "임상병리",
+   "condition": "고용형태 원문 확인",
+   "career": "경력1년",
+   "degree": "학력무관",
+   "deadline": "",
+   "posted": "2026-10-15",
+   "kind": "채용 공고",
+   "tags": [
+    "고용24",
+    "자동 수집",
+    "연봉 3,200 만원 ~ 3,300 만원"
+   ],
+   "summary": "연세큰숲내과 · 서울 · 경력1년 · 학력무관 · 채용시",
+   "qualification": "임상병리사 면허 등 세부 지원 자격은 원문에서 확인하세요.",
+   "benefit": "급여 연봉 3,200 만원 ~ 3,300 만원 · 주6일 · 주 40시간 근로 · 근무지 서울특별시 은평구 통일로",
+   "documents": "제출 서류와 양식은 원문에서 확인",
+   "source": "고용24 · 고용24 직접 등록",
+   "url": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K120312610150024&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
+   "checked": "2026-11-15",
+   "sourceId": "work24",
+   "status": "listed",
+   "lastVerifiedAt": "2026-11-15T04:22:43.710Z",
+   "deadlineLabel": "채용시",
+   "firstSeenAt": "2026-11-15T04:22:32.729Z"
+  },
+  {
+   "id": "work24-K162212610150007",
+   "type": "job",
+   "org": "이노스 이비인후과",
+   "title": "진단검사센터 임상병리사 채용공고 (인원증원)",
+   "region": "전남",
+   "field": "임상병리",
+   "condition": "고용형태 원문 확인",
+   "career": "경력무관",
+   "degree": "대졸(2~3년) ~ 대졸(4년)",
+   "deadline": "",
+   "posted": "2026-10-15",
+   "kind": "채용 공고",
+   "tags": [
+    "고용24",
+    "자동 수집",
+    "월급 260 만원 이상"
+   ],
+   "summary": "이노스 이비인후과 · 전남 · 경력무관 · 대졸(2~3년) ~ 대졸(4년) · 접수 마감 원문 확인",
+   "qualification": "임상병리사 면허 등 세부 지원 자격은 원문에서 확인하세요.",
+   "benefit": "급여 월급 260 만원 이상 · 주5일 · 주 40시간 근로 · 근무지 전남광주통합특별시 순천시 봉화3길",
+   "documents": "제출 서류와 양식은 원문에서 확인",
+   "source": "고용24 · 고용24 직접 등록",
+   "url": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K162212610150007&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
+   "checked": "2026-11-15",
+   "sourceId": "work24",
+   "status": "listed",
+   "lastVerifiedAt": "2026-11-15T04:22:43.710Z",
+   "firstSeenAt": "2026-11-15T04:22:32.729Z"
+  },
+  {
+   "id": "work24-K162142610140017",
+   "type": "job",
+   "org": "의료법인 행촌의료재단",
+   "title": "해남종합병원에서 의료 진단에 기여할 임상병리사를 모집합니다.",
+   "region": "전남",
+   "field": "임상병리",
+   "condition": "고용형태 원문 확인",
+   "career": "경력무관",
+   "degree": "대졸(2~3년)",
+   "deadline": "",
+   "posted": "2026-10-14",
+   "kind": "채용 공고",
+   "tags": [
+    "고용24",
+    "자동 수집",
+    "연봉 3,200 만원 ~ 3,500 만원"
+   ],
+   "summary": "의료법인 행촌의료재단 · 전남 · 경력무관 · 대졸(2~3년) · 채용시",
+   "qualification": "임상병리사 면허 등 세부 지원 자격은 원문에서 확인하세요.",
+   "benefit": "급여 연봉 3,200 만원 ~ 3,500 만원 · 주6일 · 주 40시간 근로 · 08:00 ~ 17:00 · 근무지 전남광주통합특별시 해남군 해남읍",
+   "documents": "제출 서류와 양식은 원문에서 확인",
+   "source": "고용24 · 고용24 직접 등록",
+   "url": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K162142610140017&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
+   "checked": "2026-11-15",
+   "sourceId": "work24",
+   "status": "listed",
+   "lastVerifiedAt": "2026-11-15T04:22:43.710Z",
+   "deadlineLabel": "채용시",
+   "firstSeenAt": "2026-11-15T04:22:32.729Z"
+  },
+  {
+   "id": "work24-3731888",
+   "type": "job",
+   "org": "광교신경과의원",
+   "title": "광교신경과의원 임상병리사 채용 공고",
+   "region": "경기",
+   "field": "임상병리",
+   "condition": "고용형태 원문 확인",
+   "career": "경력무관",
+   "degree": "대졸(2~3년)",
+   "deadline": "",
+   "posted": "2026-09-28",
+   "kind": "채용 공고",
+   "tags": [
+    "고용24",
+    "자동 수집",
+    "회사내규에 따름"
+   ],
+   "summary": "광교신경과의원 · 경기 · 경력무관 · 대졸(2~3년) · 접수 마감 원문 확인",
+   "qualification": "임상병리사 면허 등 세부 지원 자격은 원문에서 확인하세요.",
+   "benefit": "급여 회사내규에 따름 · 근무지 경기 용인시 수지구 등",
+   "documents": "제출 서류와 양식은 원문에서 확인",
+   "source": "고용24 · 메디잡 제공",
+   "url": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=3731888&infoTypeCd=CMD&infoTypeGroup=tb_workinfogubun",
+   "checked": "2026-11-15",
+   "sourceId": "work24",
+   "status": "listed",
+   "lastVerifiedAt": "2026-11-15T04:22:43.710Z",
+   "firstSeenAt": "2026-11-15T04:22:32.729Z"
+  },
+  {
+   "id": "work24-KN50102609210003",
+   "type": "job",
+   "org": "제일내과병원",
+   "title": "[제일내과병원] 임상병리사 육아휴직 대체인력 구합니다.",
+   "region": "전남",
+   "field": "임상병리",
+   "condition": "고용형태 원문 확인",
+   "career": "경력1년",
+   "degree": "대졸(2~3년) ~ 대졸(4년)",
+   "deadline": "",
+   "posted": "2026-09-21",
+   "kind": "채용 공고",
+   "tags": [
+    "고용24",
+    "자동 수집",
+    "월급 220 만원 ~ 280 만원"
+   ],
+   "summary": "제일내과병원 · 전남 · 경력1년 · 대졸(2~3년) ~ 대졸(4년) · 채용시",
+   "qualification": "임상병리사 면허 등 세부 지원 자격은 원문에서 확인하세요.",
+   "benefit": "급여 월급 220 만원 ~ 280 만원 · 주6일 · 주 40시간 근로 · 근무지 전남광주통합특별시 목포시 섶나루길",
+   "documents": "제출 서류와 양식은 원문에서 확인",
+   "source": "고용24 · 고용24 직접 등록",
+   "url": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=KN50102609210003&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
+   "checked": "2026-11-15",
+   "sourceId": "work24",
+   "status": "listed",
+   "lastVerifiedAt": "2026-11-15T04:22:43.710Z",
+   "deadlineLabel": "채용시",
+   "firstSeenAt": "2026-11-15T04:22:32.729Z"
+  },
+  {
+   "id": "work24-K171212609180004",
+   "type": "job",
+   "org": "의료법인성지의료재단제천성지병원",
+   "title": "제천 성지병원 임상병리사 채용공고(육아휴직 대체인력 계약직)",
+   "region": "충북",
+   "field": "임상병리",
+   "condition": "고용형태 원문 확인",
+   "career": "경력무관",
+   "degree": "학력무관",
+   "deadline": "",
+   "posted": "2026-09-18",
+   "kind": "채용 공고",
+   "tags": [
+    "고용24",
+    "자동 수집",
+    "월급 243 만원 ~ 320 만원"
+   ],
+   "summary": "의료법인성지의료재단제천성지병원 · 충북 · 경력무관 · 학력무관 · 채용시",
+   "qualification": "임상병리사 면허 등 세부 지원 자격은 원문에서 확인하세요.",
+   "benefit": "급여 월급 243 만원 ~ 320 만원 · 주6일 · 주 40시간 근로 · 근무지 충청북도 제천시 의림대로",
+   "documents": "제출 서류와 양식은 원문에서 확인",
+   "source": "고용24 · 고용24 직접 등록",
+   "url": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K171212609180004&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
+   "checked": "2026-11-15",
+   "sourceId": "work24",
+   "status": "listed",
+   "lastVerifiedAt": "2026-11-15T04:22:43.710Z",
+   "deadlineLabel": "채용시",
+   "firstSeenAt": "2026-11-15T04:22:32.729Z"
+  },
+  {
+   "id": "eulji-1270-443",
+   "type": "grad",
+   "org": "을지대학교 일반대학원",
+   "title": "2027학년도 전기 대학원 입시 구술면접 장소 안내",
+   "region": "경기",
+   "field": "임상병리 관련 진학",
+   "condition": "학위과정 확인",
+   "career": "입학 자격 확인",
+   "degree": "석사·박사·석박사통합",
+   "deadline": "",
+   "posted": "2026-11-10",
+   "kind": "대학원 입시 안내",
+   "tags": [
+    "공식 사이트 자동 수집",
+    "임상병리학과 개설",
+    "모집 일정 별도 확인"
+   ],
+   "summary": "을지대학교 일반대학원 공지입니다. 일반대학원에 임상병리학과(석사·박사·석박사통합)가 있어요. 접수 기간과 모집 학과는 공지 첨부 요강과 원서접수 사이트에서 확인하세요.",
+   "qualification": "전공별 지원 자격은 해당 모집요강에서 확인",
+   "benefit": "등록금·장학금·수업 시간 원문 확인 필요",
+   "documents": "해당 연도 전형 서류는 공식 요강에서 확인",
+   "source": "을지대학교 일반대학원 · 통합공지",
+   "url": "https://grad.eulji.ac.kr/index.html?menuno=4893&bbsno=443&boardno=1270&ztag=rO0ABXQAMjxjYWxsIHR5cGU9ImJvYXJkIiBubz0iMTI3MCIgc2tpbj0ibm90aWNlIj48L2NhbGw%2B&siteno=273&act=view",
+   "checked": "2026-11-15",
+   "sourceId": "eulji",
+   "status": "listed",
+   "lastVerifiedAt": "2026-11-15T04:22:45.609Z",
+   "firstSeenAt": "2026-11-15T04:22:32.729Z"
+  },
+  {
+   "id": "eulji-1270-438",
+   "type": "grad",
+   "org": "을지대학교 일반대학원",
+   "title": "2027학년도 전기 대학원 신입생, 편입생 모집",
+   "region": "경기",
+   "field": "임상병리 관련 진학",
+   "condition": "학위과정 확인",
+   "career": "입학 자격 확인",
+   "degree": "석사·박사·석박사통합",
+   "deadline": "",
+   "posted": "2026-10-01",
+   "kind": "대학원 모집 안내",
+   "tags": [
+    "공식 사이트 자동 수집",
+    "임상병리학과 개설",
+    "모집 일정 별도 확인"
+   ],
+   "summary": "을지대학교 일반대학원 공지입니다. 일반대학원에 임상병리학과(석사·박사·석박사통합)가 있어요. 접수 기간과 모집 학과는 공지 첨부 요강과 원서접수 사이트에서 확인하세요.",
+   "qualification": "전공별 지원 자격은 해당 모집요강에서 확인",
+   "benefit": "등록금·장학금·수업 시간 원문 확인 필요",
+   "documents": "해당 연도 전형 서류는 공식 요강에서 확인",
+   "source": "을지대학교 일반대학원 · 통합공지",
+   "url": "https://grad.eulji.ac.kr/index.html?menuno=4893&bbsno=438&boardno=1270&ztag=rO0ABXQAMjxjYWxsIHR5cGU9ImJvYXJkIiBubz0iMTI3MCIgc2tpbj0ibm90aWNlIj48L2NhbGw%2B&siteno=273&act=view",
+   "checked": "2026-11-15",
+   "sourceId": "eulji",
+   "status": "listed",
+   "lastVerifiedAt": "2026-11-15T04:22:45.609Z",
+   "firstSeenAt": "2026-11-15T04:22:32.729Z"
+  },
+  {
+   "id": "deu-guide-2027학년도전기대학원신입생모집요강",
+   "type": "grad",
+   "org": "동의대학교 대학원",
+   "title": "2027학년도 전기 대학원 신입생 모집요강",
+   "region": "부산",
+   "field": "임상병리 관련 진학",
+   "condition": "학위과정 확인",
+   "career": "입학 자격 확인",
+   "degree": "석사·박사",
+   "deadline": "",
+   "posted": "",
+   "kind": "대학원 모집요강",
+   "tags": [
+    "공식 사이트 자동 수집",
+    "임상병리학과 개설",
+    "모집 일정 별도 확인"
+   ],
+   "summary": "동의대학교 대학원 모집요강 화면에 게시된 요강입니다. 대학원에 임상병리학과가 있어요. 원서접수·면접 일정과 모집 인원은 요강 PDF에서 확인하세요.",
+   "qualification": "전공별 지원 자격은 해당 모집요강에서 확인",
+   "benefit": "등록금·장학금·수업 시간 원문 확인 필요",
+   "documents": "해당 연도 전형 서류는 공식 요강에서 확인",
+   "source": "동의대학교 대학원 · 모집요강",
+   "url": "https://grd.deu.ac.kr/grd/sub02_01.do",
+   "checked": "2026-11-15",
+   "sourceId": "deu",
+   "status": "listed",
+   "lastVerifiedAt": "2026-11-15T04:23:01.597Z",
+   "guideUrl": "https://grd.deu.ac.kr/grd/sub02_01.do?mode=download&articleNo=501276&attachNo=143747",
+   "guideLabel": "2027학년도 전기 대학원 신입생 모집요강 (원본 파일)",
+   "firstSeenAt": "2026-11-15T04:22:32.729Z"
+  },
+  {
+   "id": "kyungwoon-guide",
+   "type": "grad",
+   "org": "경운대학교 일반대학원",
+   "title": "경운대학교 일반대학원 신입생 모집요강",
+   "region": "경북",
+   "field": "임상병리 관련 진학",
+   "condition": "학위과정 확인",
+   "career": "입학 자격 확인",
+   "degree": "석사",
+   "deadline": "",
+   "posted": "2026-01-28",
+   "kind": "대학원 모집요강",
+   "tags": [
+    "공식 사이트 자동 수집",
+    "임상병리학과 개설",
+    "모집 일정 별도 확인"
+   ],
+   "summary": "경운대 일반대학원 모집학과에 임상병리학과가 포함돼 있어요. 요강 파일 최종 수정일 2026-01-28. 해당 학기 요강인지와 접수 일정을 PDF에서 확인하세요.",
+   "qualification": "전공별 지원 자격은 해당 모집요강에서 확인",
+   "benefit": "등록금·장학금·수업 시간 원문 확인 필요",
+   "documents": "해당 연도 전형 서류는 공식 요강에서 확인",
+   "source": "경운대학교 일반대학원 · 모집요강",
+   "url": "https://www.ikw.ac.kr/resources/templates/front/assets/file/uni_grad/grad/graduate_guide_new.pdf",
+   "checked": "2026-11-15",
+   "sourceId": "kyungwoon",
+   "status": "listed",
+   "lastVerifiedAt": "2026-11-15T04:23:03.261Z",
+   "guideUrl": "https://www.ikw.ac.kr/resources/templates/front/assets/file/uni_grad/grad/graduate_guide_new.pdf",
+   "guideLabel": "모집요강 PDF",
+   "firstSeenAt": "2026-11-15T04:22:32.729Z"
+  },
+  {
+   "id": "alio306936",
+   "type": "job",
+   "org": "전남대학교병원",
+   "title": "2026년 11월 전남대학교병원 직원(지원직) 공개채용 공고",
+   "region": "전남광주",
+   "field": "임상병리",
+   "condition": "비정규직",
+   "career": "신입",
+   "degree": "학력무관",
+   "deadline": "2026-11-25",
+   "posted": "2026-11-11",
+   "kind": "채용 공고",
+   "tags": [
+    "잡알리오",
+    "자동 수집",
+    "여러 직종 통합 공고"
+   ],
+   "summary": "임상병리사를 포함한 통합 채용 공고입니다. 직종별 조건은 원문에서 확인하세요. 전남대학교병원 · 전남광주 · 신입 · 학력무관 · 비정규직 · 접수 마감 2026-11-25",
+   "qualification": "본문 중 임상병리 관련: …국책 연구과제 기획 및 수행 경력자, (의료사회사업) 영역별 (의료)사회복지사 자격 소지자, (KT꿈품교실 운영 등 의료사회사업 업무) 의료사회복지사 자격 소지자 및 종합병원급 이상 기관에서 사회복지 상담 업무 경력 3년 이상 보유자, (수면검사실 임상병리사) 수면다원검사 및 이비인후과 관련 검사 업무 경험자, 수면의학 및 이비인후과 관련 임상연구 참여 경험자, 임상연구 코디네이터(CRC) 업무 수행 경험자, 임상시험 종사자 교육(CRC, GCP 등) 이수자 또는 임상연구 관련 자격증 소지자,…\no항생제 적정사용 관리 시범사업 : 약사 면허 소지자\no보건의료데이터통계 : 이공계열 박사학위 이상 소지자\no권역외상센터 코디네이터 : 간호사 면허 소지자로서 종합병원 이상 임상 경력 1년 이상인 자\no의료사회사업 : 사회복지사 1급 자격 소지자\noKT 꿈품교실 운영 등 의료사회사업 업무 : 사회복지사 1급 자격 소지자\no영상의학검사 : 방사선사 면허 소지자\no지역장애인보건의료센터 작업치료사 : 작업치료사 면허 소지자로서 면허 취득 후 경력 3년 이상인 자\no수면검사실 임상병리사 : 임상병리사 면허 소지자로서 야간근무, 휴일근무 및 온콜근무가 가능한 자\no안전관리자 : 산업안전기사 자격 소지자\no조제업무보조 : 3교대 근무가 가능한 자\no항생제 적정사용 프로그램 개발 등 : 아래 경력 중 하나 이상을 충족해야 함\n* Client/Server 환경 개발 경력 3년 이상\n* ASP.NET, JavaScript, CSS, TypeScript, jQuery, Visualstudio 환경 등에서 웹개발 경력 3년 이상\no정보보호 최고 책임자 : 아래 응시자격 참고\n*필수자격 : 자산총액 5천억원 이상인 정보통신서비스 제공자로서 일반자격과 특별 자격요건을 충족\n1) 일반자격(아래 자격 중 하나 이상 충족)\n- 석사학위 이상(정보보호,정보기술)\n- 학사학위 + 3년 경력(정보보호, 정보기술)\n- 전문학사 학위 + 5년 경력(정보보호, 정보기술)\n- 정보보호 관리체계 인증심사원 자격\n- 정보보호 부서의 장 근무경력 1년 이상\n2) 특별자격(정보통신망법 시행령 제36조의7제6항에 의거, 아래 자격 중 하나 이상 충족)\n- 정보보호 분야 업무경력이 4년 이상\n- 정보보호분야 업무경력과 정보기술 업무경력을 합산한 기간이 5년 이상\n(2년 이상은 정보보호 분야 업무경력 필요)\n우대: 가. 취업지원대상자 : 관련 법률에 의거 가점(각 전형 단계별 만점의 5% 또는 10%)\n나. 장애인 : 각 전형 단계별 만점의 3% 가점\n※ 위 가점이 중복일 경우 가장 유리한 것으로 적용\n다. 우대사항에 따른 자격 가점 : 관련 기준에 의거 서류전형에만 가점\n※ 위 가점(다)이 중복일 경우 가장 유리한 것으로 적용\n※ 사회형평적 가점사항(가,나)와 자격 가점사항(다)는 서류전형에서 별개로 환산",
+   "benefit": "급여·근무시간은 원문 확인 필요",
+   "documents": "전형 절차: 가. 1차 전형 : 서류전형\no 응시자가 제출한 입사지원서 및 자기소개서를 바탕으로 직무적합성, 조직적합성 등을 종합적으로 평가함.\no 평가항목: 직무 적합성, 조직 적합성 등\no 합격인원 : 선발 예정인원이 1명일 경우 3명, 2명일 경우 5명, 3명 이상일 경우 최종 선발인원의 2배수(선발 예정인원을 초과하여 동점자가 있을 때에는 그 동점자를 모두 합격자로 함)\no 응시인원이 1차 서류전형 합격배수 이하인 경우 응시자격 기준 충족여부로 합격을 결정함.\n나. 2차 면접전형\no 개요 : 서류전형 합격자 중 다면적 인성검사를 완료한 대상으로 직무수행에 필요한 능력 및 적격성을 평가함.\no 평가항목 : 직원으로서의 자세 및 직업윤리, 전문지식과 그 응용능력, 예의ㆍ품행 및 성실성, 상호존중과 배려의식, 의사표현",
+   "source": "잡알리오 · 전남대학교병원",
+   "url": "https://job.alio.go.kr/recruitview.do?idx=306936",
+   "checked": "2026-11-15",
+   "sourceId": "alio",
+   "status": "listed",
+   "lastVerifiedAt": "2026-11-15T04:23:55.023Z",
+   "firstSeenAt": "2026-11-15T04:22:32.729Z"
+  },
+  {
+   "id": "alio306623",
+   "type": "job",
+   "org": "충남대학교병원",
+   "title": "[대전] 충남대학교병원 2026년 11월 계약직 직원 채용공고",
+   "region": "대전",
+   "field": "임상병리",
+   "condition": "비정규직",
+   "career": "신입",
+   "degree": "학력무관",
+   "deadline": "2026-11-16",
+   "posted": "2026-11-02",
+   "kind": "채용 공고",
+   "tags": [
+    "잡알리오",
+    "자동 수집",
+    "여러 직종 통합 공고"
+   ],
+   "summary": "임상병리사를 포함한 통합 채용 공고입니다. 직종별 조건은 원문에서 확인하세요. 충남대학교병원 · 대전 · 신입 · 학력무관 · 비정규직 · 접수 마감 2026-11-16",
+   "qualification": "본문 중 임상병리 관련: …를 적용 전형절차/방법 1차: 서류심사 2차: 면접전형(블라인드면접) 계약직(간호사(A)) 구분 선발인원 응시인원 결과 확정일 1차 - - - 최종 - - - 계약직(영양사) 구분 선발인원 응시인원 결과 확정일 1차 - - - 최종 - - - 계약직(임상병리사) 구분 선발인원 응시인원 결과 확정일 1차 - - - 최종 - - - 계약직(간호조무(A)) 구분 선발인원 응시인원 결과 확정일 1차 - - - 최종 - - - 계약직(간호조무(B)) 구분 선발인원 응시인원 결과 확정일 1차 - - - 최종…\n직종 및 분야별 응시자격 첨부파일 참고\n우대: * 취업지원대상자: 각 과목별 득점에 각 과목별 만점의 일정비율(10% 또는 5%)에 해당하는 점수를 가산\n* 장애인: 장애인의 가점은 만점의 3%를 적용",
+   "benefit": "급여·근무시간은 원문 확인 필요",
+   "documents": "전형 절차: 1차: 서류심사\n2차: 면접전형(블라인드면접)",
+   "source": "잡알리오 · 충남대학교병원",
+   "url": "https://job.alio.go.kr/recruitview.do?idx=306623",
+   "checked": "2026-11-15",
+   "sourceId": "alio",
+   "status": "listed",
+   "lastVerifiedAt": "2026-11-15T04:24:33.573Z",
+   "firstSeenAt": "2026-11-15T04:22:32.729Z"
+  },
+  {
+   "id": "alio306628",
+   "type": "job",
+   "org": "한국보훈복지의료공단",
+   "title": "[중앙보훈병원] 기간제 직원 채용 공고(11월)",
+   "region": "서울",
+   "field": "임상병리",
+   "condition": "비정규직",
+   "career": "신입+경력",
+   "degree": "학력무관",
+   "deadline": "2026-11-16",
+   "posted": "2026-11-02",
+   "kind": "채용 공고",
+   "tags": [
+    "잡알리오",
+    "자동 수집",
+    "여러 직종 통합 공고"
+   ],
+   "summary": "임상병리사를 포함한 통합 채용 공고입니다. 직종별 조건은 원문에서 확인하세요. 한국보훈복지의료공단 · 서울 · 신입+경력 · 학력무관 · 비정규직 · 접수 마감 2026-11-16",
+   "qualification": "본문 중 임상병리 관련: …계별 채용정보 첨부파일 전체보기 응시자격 [공통 자격요건] - 인사규정 제18조에 정한 결격사유에 해당하지 않는 자 - 성별, 학력 및 전공: 제한 없음 ※ 단, 공고일 기준 정년(60세)에 도달한 자는 지원 불가 [필수 자격요건] - 기간제 보건직(임상병리사) : 공고일 기준 임상병리사 면허증 소지자 ※ 자세한 내용은 채용공고문 확인 결격사유 ① 다음 각 호의 어느 하나에 해당하는 사람은 직원에 임용될 수 없다. 1. 피성년후견인 2. 파산선고를 받은 자로서 복권되지 아니한 사람 3. 금고 이상…\n[공통 자격요건]\n- 인사규정 제18조에 정한 결격사유에 해당하지 않는 자\n- 성별, 학력 및 전공: 제한 없음\n※ 단, 공고일 기준 정년(60세)에 도달한 자는 지원 불가\n[필수 자격요건]\n- 기간제 보건직(임상병리사) : 공고일 기준 임상병리사 면허증 소지자\n※ 자세한 내용은 채용공고문 확인\n우대: - 「장애인 고용촉진 및 직업재활법」 에 따른 장애인은 2차전형(면접) 시 만점의 10% 가점 부여\n- 「국가유공자 등 예우 및 지원에 관한 법률」 등 각종 보훈 관련 법령에",
+   "benefit": "급여·근무시간은 원문 확인 필요",
+   "documents": "전형 절차: 1. 지원서 제출처 및 접수기간\n- 접수기간: ‘26.11.02.(월)~’26.11.16.(월) 09:00까지\n- 지원방법\n· 접수처(공통) : https://bohun.fairyhr.com\n2. 서류심사\n- 합격자 결정: 채용예정인원의 35배수 이내 자격요건 충족자 합격\n※ 지원 인원이 채용예정인원의 35배수 초과시 서류심사 진행 후 서류합격인원\n(채용예정인원의 30배수) 결정(업무지원직 제외)\n※ 단, 지원인원이 채용예정인원의 35배수 이하인 경우 서류심사 생략하며 자격\n요건 충족자 전원 면접심사\n3. 면접시험\n- 블라인드 면접방식(직무, 역량면접 진행)\n4. 최종합격자 결정\n- 면접시험 결과 고득점자순\n* 과락: 면접전형 60점 미만자(가점 제외) 불합격 처리\n* 적격자가 없을 경우 채용하지 않을 수 ",
+   "source": "잡알리오 · 한국보훈복지의료공단",
+   "url": "https://job.alio.go.kr/recruitview.do?idx=306628",
+   "checked": "2026-11-15",
+   "sourceId": "alio",
+   "status": "listed",
+   "lastVerifiedAt": "2026-11-15T04:24:37.829Z",
+   "firstSeenAt": "2026-11-15T04:22:32.729Z"
+  },
+  {
+   "id": "saramin-55576240",
+   "type": "job",
+   "org": "서창서울내과의원",
+   "title": "서창서울내과의원 임상병리사 경력 채용 공고 (2명)",
+   "region": "인천",
+   "field": "임상병리",
+   "condition": "정규직·계약직",
+   "career": "경력1년↑",
+   "degree": "학력무관",
+   "deadline": "2026-12-15",
+   "posted": "2026-11-15",
+   "kind": "채용 공고",
+   "tags": [
+    "사람인",
+    "자동 수집"
+   ],
+   "summary": "서창서울내과의원 · 인천 · 경력1년↑ · 학력무관 · 정규직·계약직 · 접수 마감 2026-12-15",
+   "qualification": "임상병리사 면허 등 세부 지원 자격은 원문에서 확인하세요.",
+   "benefit": "급여·근무시간은 원문 확인 필요",
+   "documents": "제출 서류와 양식은 원문에서 확인",
+   "source": "사람인",
+   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55576240",
+   "checked": "2026-11-15",
+   "sourceId": "saramin",
+   "status": "listed",
+   "lastVerifiedAt": "2026-11-15T04:24:52.502Z",
+   "firstSeenAt": "2026-11-15T04:22:32.729Z"
+  },
+  {
+   "id": "saramin-55576210",
+   "type": "job",
+   "org": "바른마디튼튼의원",
+   "title": "주말알바(토,일)임상병리사 선생님 초빙합니다. 파주 운정",
+   "region": "경기",
+   "field": "임상병리",
+   "condition": "아르바이트",
+   "career": "경력1년↑",
+   "degree": "초대졸↑",
+   "deadline": "2027-01-14",
+   "posted": "2026-11-15",
+   "kind": "채용 공고",
+   "tags": [
+    "사람인",
+    "자동 수집",
+    "110,000 원"
+   ],
+   "summary": "바른마디튼튼의원 · 경기 · 경력1년↑ · 초대졸↑ · 아르바이트 · 접수 마감 2027-01-14",
+   "qualification": "임상병리사 면허 등 세부 지원 자격은 원문에서 확인하세요.",
+   "benefit": "급여 110,000 원 · 근무 조건은 원문 확인",
+   "documents": "제출 서류와 양식은 원문에서 확인",
+   "source": "사람인",
+   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55576210",
+   "checked": "2026-11-15",
+   "sourceId": "saramin",
+   "status": "listed",
+   "lastVerifiedAt": "2026-11-15T04:24:52.503Z",
+   "firstSeenAt": "2026-11-15T04:22:32.729Z"
   }
  ],
  "sources": [
+  {
+   "id": "gojobs",
+   "status": "success",
+   "checkedAt": "2026-11-15T04:22:32.729Z",
+   "count": 1,
+   "message": "공개 페이지 확인 완료",
+   "lastSuccessAt": "2026-11-15T04:22:32.729Z"
+  },
+  {
+   "id": "work24",
+   "status": "success",
+   "checkedAt": "2026-11-15T04:22:32.729Z",
+   "count": 20,
+   "message": "공개 페이지 확인 완료",
+   "lastSuccessAt": "2026-11-15T04:22:32.729Z"
+  },
+  {
+   "id": "eulji",
+   "status": "success",
+   "checkedAt": "2026-11-15T04:22:32.729Z",
+   "count": 2,
+   "message": "공개 페이지 확인 완료",
+   "lastSuccessAt": "2026-11-15T04:22:32.729Z"
+  },
+  {
+   "id": "deu",
+   "status": "success",
+   "checkedAt": "2026-11-15T04:22:32.729Z",
+   "count": 1,
+   "message": "공개 페이지 확인 완료",
+   "lastSuccessAt": "2026-11-15T04:22:32.729Z"
+  },
+  {
+   "id": "kyungwoon",
+   "status": "success",
+   "checkedAt": "2026-11-15T04:22:32.729Z",
+   "count": 1,
+   "message": "공개 페이지 확인 완료",
+   "lastSuccessAt": "2026-11-15T04:22:32.729Z"
+  },
   {
    "id": "yonsei-spring",
    "type": "grad",
    "name": "연세대 미래캠퍼스 · 전기 일반전형",
    "url": "https://graduate.yonsei.ac.kr/graduate/admission/general_schedule.do",
    "status": "success",
-   "checkedAt": "2026-11-15T02:02:51.504Z",
+   "checkedAt": "2026-11-15T04:22:32.729Z",
    "count": 1,
    "message": "공개 페이지 확인 완료",
-   "lastSuccessAt": "2026-11-15T02:02:51.504Z"
+   "lastSuccessAt": "2026-11-15T04:22:32.729Z"
   },
   {
    "id": "yonsei-fall",
@@ -6347,10 +7303,10 @@
    "name": "연세대 미래캠퍼스 · 후기 일반전형",
    "url": "https://graduate.yonsei.ac.kr/graduate/admission/general_fall_schedule.do",
    "status": "success",
-   "checkedAt": "2026-11-15T02:02:51.504Z",
+   "checkedAt": "2026-11-15T04:22:32.729Z",
    "count": 1,
    "message": "공개 페이지 확인 완료",
-   "lastSuccessAt": "2026-11-15T02:02:51.504Z"
+   "lastSuccessAt": "2026-11-15T04:22:32.729Z"
   },
   {
    "id": "nsu-admissions",
@@ -6358,10 +7314,10 @@
    "name": "남서울대학교 대학원 · 모집요강",
    "url": "https://gr.nsu.ac.kr/kor/21/pdfViewer/CAT006",
    "status": "success",
-   "checkedAt": "2026-11-15T02:02:51.504Z",
+   "checkedAt": "2026-11-15T04:22:32.729Z",
    "count": 1,
    "message": "공개 페이지 확인 완료",
-   "lastSuccessAt": "2026-11-15T02:02:51.504Z"
+   "lastSuccessAt": "2026-11-15T04:22:32.729Z"
   },
   {
    "id": "nsu",
@@ -6369,10 +7325,10 @@
    "name": "남서울대학교 대학원 · 공지사항",
    "url": "https://gr.nsu.ac.kr/kor/article/notice?searchCondition=1&searchKeyword=%EB%AA%A8%EC%A7%91",
    "status": "success",
-   "checkedAt": "2026-11-15T02:02:51.504Z",
+   "checkedAt": "2026-11-15T04:22:32.729Z",
    "count": 0,
    "message": "공개 페이지 확인 완료",
-   "lastSuccessAt": "2026-11-15T02:02:51.504Z"
+   "lastSuccessAt": "2026-11-15T04:22:32.729Z"
   },
   {
    "id": "seoyeong",
@@ -6380,10 +7336,10 @@
    "name": "서영대학교 대학원 · 입학 안내",
    "url": "https://jspjchild.seoyeong.ac.kr/grad/na/ntt/selectNttList.do?bbsId=781&mi=4146",
    "status": "success",
-   "checkedAt": "2026-11-15T02:02:51.504Z",
+   "checkedAt": "2026-11-15T04:22:32.729Z",
    "count": 2,
    "message": "공개 페이지 확인 완료",
-   "lastSuccessAt": "2026-11-15T02:02:51.504Z"
+   "lastSuccessAt": "2026-11-15T04:22:32.729Z"
   },
   {
    "id": "alio",
@@ -6391,10 +7347,10 @@
    "name": "잡알리오 · 임상병리 채용",
    "url": "https://job.alio.go.kr/recruit.do?search_type=title&keyword=%EC%9E%84%EC%83%81%EB%B3%91%EB%A6%AC&pageSet=50",
    "status": "success",
-   "checkedAt": "2026-11-15T02:02:51.504Z",
-   "count": 11,
+   "checkedAt": "2026-11-15T04:22:32.729Z",
+   "count": 14,
    "message": "공개 페이지 확인 완료",
-   "lastSuccessAt": "2026-11-15T02:02:51.504Z"
+   "lastSuccessAt": "2026-11-15T04:22:32.729Z"
   },
   {
    "id": "saramin",
@@ -6402,10 +7358,10 @@
    "name": "사람인 · 임상병리 공개 채용",
    "url": "https://www.saramin.co.kr/zf_user/search?searchword=%EC%9E%84%EC%83%81%EB%B3%91%EB%A6%AC&recruitPageCount=40",
    "status": "success",
-   "checkedAt": "2026-11-15T02:02:51.504Z",
-   "count": 60,
+   "checkedAt": "2026-11-15T04:22:32.729Z",
+   "count": 62,
    "message": "공개 페이지 확인 완료",
-   "lastSuccessAt": "2026-11-15T02:02:51.504Z"
+   "lastSuccessAt": "2026-11-15T04:22:32.729Z"
   },
   {
    "id": "jobkorea",
@@ -6413,10 +7369,10 @@
    "name": "잡코리아 · 임상병리 공개 채용",
    "url": "https://www.jobkorea.co.kr/Search/?stext=%EC%9E%84%EC%83%81%EB%B3%91%EB%A6%AC",
    "status": "success",
-   "checkedAt": "2026-11-15T02:02:51.504Z",
+   "checkedAt": "2026-11-15T04:22:32.729Z",
    "count": 10,
    "message": "공개 페이지 확인 완료",
-   "lastSuccessAt": "2026-11-15T02:02:51.504Z"
+   "lastSuccessAt": "2026-11-15T04:22:32.729Z"
   },
   {
    "id": "eumc",
@@ -6424,10 +7380,10 @@
    "name": "이화의료원 · 임상병리 채용",
    "url": "https://www.eumc.ac.kr/intro/recrut/list.do",
    "status": "success",
-   "checkedAt": "2026-11-15T02:02:51.504Z",
+   "checkedAt": "2026-11-15T04:22:32.729Z",
    "count": 2,
    "message": "공개 페이지 확인 완료",
-   "lastSuccessAt": "2026-11-15T02:02:51.504Z"
+   "lastSuccessAt": "2026-11-15T04:22:32.729Z"
   },
   {
    "id": "seegene",
@@ -6435,10 +7391,10 @@
    "name": "씨젠의료재단 · 검사 전문인력 채용",
    "url": "https://pr.seegenemedical.com/board/recruit/index.do",
    "status": "success",
-   "checkedAt": "2026-11-15T02:02:51.504Z",
+   "checkedAt": "2026-11-15T04:22:32.729Z",
    "count": 2,
    "message": "공개 페이지 확인 완료",
-   "lastSuccessAt": "2026-11-15T02:02:51.504Z"
+   "lastSuccessAt": "2026-11-15T04:22:32.729Z"
   },
   {
    "id": "nursenet",
@@ -6540,10 +7496,10 @@
    "lastSuccessAt": null
   }
  ],
- "lastAttemptAt": "2026-11-15T02:02:51.504Z",
- "lastSuccessAt": "2026-11-15T02:02:51.504Z",
+ "lastAttemptAt": "2026-11-15T04:22:32.729Z",
+ "lastSuccessAt": "2026-11-15T04:22:32.729Z",
  "status": "success",
- "added": 0,
+ "added": 30,
  "changed": 0,
  "schedule": {
   "enabled": true,
@@ -6552,5 +7508,5 @@
   "via": "github-actions",
   "repo": "javingsu/labpath"
  },
- "previousSuccessAt": "2026-11-15T02:00:19.829Z"
+ "previousSuccessAt": "2026-11-15T02:02:51.504Z"
 }
